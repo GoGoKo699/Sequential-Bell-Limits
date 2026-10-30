@@ -1,0 +1,52 @@
+# Sequential Bell Limits
+
+> A scientific account of dimension-independent causal limits on one-sided sequential CHSH sharing, exact nonsignalling attainment, the optimal quantum exponential rate, and marginal Bell-evidence budgets.
+
+## Start here
+
+- [Overview](README.md): question, principal results, resource boundaries and reading routes.
+- [Model](science/model.md): the joint time-ordered nonsignalling law, independent uniform Bob settings, ordinary marginals and common notation.
+- [Related work](references/related-work.md): attribution and comparisons to the closest primary results.
+
+## Questions and authoritative files
+
+- Why must common CHSH gaps shrink exponentially? [causal-bound.md](science/causal-bound.md) proves the one-step posterior-predictability inequality and its weighted telescope.
+- Is the all-nonsignalling bound exact? [attainment.md](science/attainment.md) proves the entire nonnegative-gap projection and realizes it through the inherited Hardy protocol and explicit causal kernels.
+- Can quantum systems reach the same exponent? [quantum-rate.md](science/quantum-rate.md) specifies the state, projectors, trit-controlled instruments and exact equal-margin schedule, then proves the optimal exponential rate.
+- How many source repetitions are necessary to certify every marginal? [statistical-evidence.md](science/statistical-evidence.md) defines the actual-design KL quantity and gives a finite-n binary-testing reduction.
+- What if alphabets are larger or settings are correlated? [general-evidence-budget.md](science/general-evidence-budget.md) proves Shannon and entanglement-of-formation budgets with residual terms and an external-input total-correlation correction.
+- What does noise mean, and which assumptions can fail? [noise-and-boundaries.md](science/noise-and-boundaries.md) gives the exact uniform-contamination threshold and counterexamples outside the model or data restriction.
+- How were finite cases checked? [verification/README.md](verification/README.md) documents the code, fixtures, tolerances and interpretation of results.
+
+## Reading routes
+
+Scientific story: README -> model -> causal-bound -> attainment -> quantum-rate -> statistical-evidence -> noise-and-boundaries.
+
+Proof route: model's conditioning identities -> causal-bound's one-step inequality -> weighted and subsequence theorems -> attainment's positive-sector converse -> quantum-rate's instrument and allocation -> asymptotic comparison.
+
+Evidence route: statistical-evidence's observed input law and finite-n lemma -> Fine whitening -> weighted KL constraint -> general-evidence-budget's lifted comparator, chain rule and quantum refinement.
+
+Reproduction route: verification/README.md -> verification/requirements.txt -> verification/run_all.py -> individual programs and exact fixtures.
+
+## Distinctions to preserve
+
+The causal CHSH theorem assumes one binary Alice outcome from one fixed measurement pair, binary Bob outcomes, fresh independent uniform Bob settings, no signalling from Alice to the entire Bob record, and causality of joint prefixes that include Alice. Arbitrary dimension and forward Bob memory are allowed. Pairwise nonsignalling alone is insufficient.
+
+The weighted gaps are signed. Do not replace negative gaps by zero at their original indices. A selected ordered subsequence is reindexed before applying its own weights.
+
+The exact finite-depth optimum is over time-ordered nonsignalling behaviors. The quantum result fixes the exponential rate only. Its construction has a six-dimensional Bob carrier but depth-dependent source, Alice projectors and control probabilities.
+
+The Hardy measurement mechanism is inherited from Steffinlongo–D'Alessandro–Renner, arXiv:2607.24700v1. Attribute it accordingly. The universal converse, optimized specialization and resulting optimal-rate comparison have separate roles.
+
+All evidence quantities use natural logarithms and the actual input law. A different input law optimized independently for each link cannot be inserted into a shared evidence budget.
+
+The exponential finite-sample theorem concerns each pair's own records and iid source repetitions. It does not apply to arbitrary full-transcript tests, future-history postselection, or total randomness extraction. Individual and simultaneous test guarantees are distinguished in the statistical page.
+
+The quantum residual budget includes all initially shared resources. Its primary residual is measured before Alice's deferred readout; the actual post-readout variant is stated separately. Correlated external settings require causal reveal and contribute their total correlation.
+
+The uniform-contamination theorem refers to the specific output-replacement channel. Do not turn it into a generic hardware-noise threshold.
+
+## Citation and contact
+
+- [Structured bibliography](references/references.bib)
+- [Purpose and contact](README.md#purpose-and-contact)

@@ -1,0 +1,3469 @@
+{
+  "checks": [
+    {
+      "passed": true,
+      "program": "verify_tons.py",
+      "report": {
+        "all_passed": true,
+        "boundary_fixtures": {
+          "bob_only_time_ordering_is_insufficient": {
+            "checks": {
+              "joint_alice_prefix_constraint_rejects": true,
+              "marginal_chsh_values_are_2_and_4": true,
+              "normalized": true,
+              "whole_bob_string_is_independent_of_alice": true,
+              "whole_bob_string_is_independent_of_all_settings": true
+            },
+            "max_exact_residual_by_constraint": {
+              "alice_and_prefix_no_future_input": "1/2",
+              "alice_to_all_bobs": "0",
+              "normalization": "0"
+            },
+            "passed": true
+          },
+          "pairwise_pr_tables_do_not_imply_joint_tons": {
+            "checks": {
+              "both_marginal_chsh_values_are_4": true,
+              "joint_alice_to_bobs_constraint_rejects": true,
+              "normalized": true
+            },
+            "max_exact_residual_by_constraint": {
+              "alice_and_prefix_no_future_input": "0",
+              "alice_to_all_bobs": "1/2",
+              "normalization": "0"
+            },
+            "passed": true
+          },
+          "valid_signed_gap_example": {
+            "checks": {
+              "all_eight_orientations_obey_one_step_bound": true,
+              "all_joint_tons_equalities": true,
+              "all_maximal_chsh_values_match": true,
+              "all_selected_subsequence_bounds": true,
+              "nonnegative": true,
+              "potential_in_unit_interval": true,
+              "potential_nondecreasing": true,
+              "refined_weighted_bound": true
+            },
+            "final_R": "0",
+            "initial_R": "1",
+            "invalid_positive_part_replacement_detected": true,
+            "max_exact_residual_by_constraint": {
+              "alice_and_prefix_no_future_input": "0",
+              "alice_to_all_bobs": "0",
+              "normalization": "0"
+            },
+            "maximal_chsh_values": [
+              "0",
+              "4"
+            ],
+            "passed": true,
+            "positive_part_weighted_sum": "4",
+            "potentials_M": [
+              "0",
+              "0",
+              "1"
+            ],
+            "selected_subsequences_checked": 3,
+            "signed_weighted_sum": "2",
+            "weighted_gap": "2"
+          }
+        },
+        "cases": [
+          {
+            "archived_dimensions_match": true,
+            "constraint_counts": {
+              "alice_and_prefix_no_future_input": 4,
+              "alice_to_all_bobs": 4,
+              "normalization": 4
+            },
+            "equalities": 12,
+            "exact_profiles": [
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "0"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "0"
+                  ],
+                  "q": [
+                    "1",
+                    "1/2"
+                  ]
+                },
+                "initial_R": "0",
+                "local_weight": "1",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "2"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "1",
+                  "1"
+                ],
+                "profile": "local_vertex",
+                "selected_subsequences_checked": 1,
+                "target_gaps": [
+                  "0"
+                ],
+                "weighted_gap": "0"
+              },
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "1"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "1"
+                  ],
+                  "q": [
+                    "1",
+                    "0"
+                  ]
+                },
+                "initial_R": "1",
+                "local_weight": "0",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "4"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "0",
+                  "1"
+                ],
+                "profile": "fair_boundary",
+                "selected_subsequences_checked": 1,
+                "target_gaps": [
+                  "2"
+                ],
+                "weighted_gap": "2"
+              },
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "1/2"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "1/2"
+                  ],
+                  "q": [
+                    "1",
+                    "1/4"
+                  ]
+                },
+                "initial_R": "1/2",
+                "local_weight": "1/2",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "3"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "1/2",
+                  "1"
+                ],
+                "profile": "positive_interior",
+                "selected_subsequences_checked": 1,
+                "target_gaps": [
+                  "1"
+                ],
+                "weighted_gap": "1"
+              },
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "1"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "1"
+                  ],
+                  "q": [
+                    "1",
+                    "0"
+                  ]
+                },
+                "initial_R": "1",
+                "local_weight": "0",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "4"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "0",
+                  "1"
+                ],
+                "profile": "axis_1",
+                "selected_subsequences_checked": 1,
+                "target_gaps": [
+                  "2"
+                ],
+                "weighted_gap": "2"
+              }
+            ],
+            "k": 1,
+            "linear_programs": {
+              "fair_gap": {
+                "expected_exact": "2",
+                "max_equality_residual": 0.0,
+                "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                "minimum_fair_gap_slack": 0.0,
+                "minimum_probability": 0.0,
+                "objective_error": 0.0,
+                "optimum": 2.0,
+                "passed": true,
+                "status": 0
+              },
+              "weighted_chsh": {
+                "expected_exact": "4",
+                "max_equality_residual": 0.0,
+                "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                "minimum_fair_gap_slack": null,
+                "minimum_probability": 0.0,
+                "objective_error": 0.0,
+                "optimum": 4.0,
+                "passed": true,
+                "status": 0
+              },
+              "weighted_chsh_with_alice_bias_half": {
+                "expected_exact": "3",
+                "max_equality_residual": 0.0,
+                "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                "minimum_fair_gap_slack": null,
+                "minimum_probability": 0.0,
+                "objective_error": 0.0,
+                "optimum": 3.0,
+                "passed": true,
+                "status": 0
+              }
+            },
+            "passed": true,
+            "variables": 16
+          },
+          {
+            "archived_dimensions_match": true,
+            "constraint_counts": {
+              "alice_and_prefix_no_future_input": 28,
+              "alice_to_all_bobs": 16,
+              "normalization": 8
+            },
+            "equalities": 52,
+            "exact_profiles": [
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "0",
+                  "0"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "0",
+                    "0"
+                  ],
+                  "q": [
+                    "1",
+                    "1/2",
+                    "1/4"
+                  ]
+                },
+                "initial_R": "0",
+                "local_weight": "1",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "2",
+                  "2"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "1",
+                  "1",
+                  "1"
+                ],
+                "profile": "local_vertex",
+                "selected_subsequences_checked": 3,
+                "target_gaps": [
+                  "0",
+                  "0"
+                ],
+                "weighted_gap": "0"
+              },
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "2/3",
+                  "1/3"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "1/3",
+                    "1"
+                  ],
+                  "q": [
+                    "1",
+                    "1/3",
+                    "0"
+                  ]
+                },
+                "initial_R": "1",
+                "local_weight": "0",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "8/3",
+                  "8/3"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "0",
+                  "2/3",
+                  "1"
+                ],
+                "profile": "fair_boundary",
+                "selected_subsequences_checked": 3,
+                "target_gaps": [
+                  "2/3",
+                  "2/3"
+                ],
+                "weighted_gap": "2"
+              },
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "3/8",
+                  "1/8"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "1/4",
+                    "1/3"
+                  ],
+                  "q": [
+                    "1",
+                    "3/8",
+                    "1/8"
+                  ]
+                },
+                "initial_R": "1/2",
+                "local_weight": "1/2",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "5/2",
+                  "9/4"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "1/2",
+                  "7/8",
+                  "1"
+                ],
+                "profile": "positive_interior",
+                "selected_subsequences_checked": 3,
+                "target_gaps": [
+                  "1/2",
+                  "1/4"
+                ],
+                "weighted_gap": "1"
+              },
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "1",
+                  "0"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "1",
+                    "0"
+                  ],
+                  "q": [
+                    "1",
+                    "0",
+                    "0"
+                  ]
+                },
+                "initial_R": "1",
+                "local_weight": "0",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "4",
+                  "2"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "0",
+                  "1",
+                  "1"
+                ],
+                "profile": "axis_1",
+                "selected_subsequences_checked": 3,
+                "target_gaps": [
+                  "2",
+                  "0"
+                ],
+                "weighted_gap": "2"
+              },
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "1/2",
+                  "1/2"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "0",
+                    "1"
+                  ],
+                  "q": [
+                    "1",
+                    "1/2",
+                    "0"
+                  ]
+                },
+                "initial_R": "1",
+                "local_weight": "0",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "2",
+                  "3"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "0",
+                  "1/2",
+                  "1"
+                ],
+                "profile": "axis_2",
+                "selected_subsequences_checked": 3,
+                "target_gaps": [
+                  "0",
+                  "1"
+                ],
+                "weighted_gap": "2"
+              }
+            ],
+            "k": 2,
+            "linear_programs": {
+              "fair_gap": {
+                "expected_exact": "2/3",
+                "max_equality_residual": 2.7755575615628914e-17,
+                "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                "minimum_fair_gap_slack": -1.1102230246251565e-16,
+                "minimum_probability": 0.0,
+                "objective_error": 0.0,
+                "optimum": 0.6666666666666666,
+                "passed": true,
+                "status": 0
+              },
+              "weighted_chsh": {
+                "expected_exact": "8",
+                "max_equality_residual": 0.0,
+                "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                "minimum_fair_gap_slack": null,
+                "minimum_probability": 0.0,
+                "objective_error": 0.0,
+                "optimum": 8.0,
+                "passed": true,
+                "status": 0
+              },
+              "weighted_chsh_with_alice_bias_half": {
+                "expected_exact": "7",
+                "max_equality_residual": 0.0,
+                "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                "minimum_fair_gap_slack": null,
+                "minimum_probability": 0.0,
+                "objective_error": 0.0,
+                "optimum": 7.0,
+                "passed": true,
+                "status": 0
+              }
+            },
+            "passed": true,
+            "variables": 64
+          },
+          {
+            "archived_dimensions_match": true,
+            "constraint_counts": {
+              "alice_and_prefix_no_future_input": 140,
+              "alice_to_all_bobs": 64,
+              "normalization": 16
+            },
+            "equalities": 220,
+            "exact_profiles": [
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "0",
+                    "0",
+                    "0"
+                  ],
+                  "q": [
+                    "1",
+                    "1/2",
+                    "1/4",
+                    "1/8"
+                  ]
+                },
+                "initial_R": "0",
+                "local_weight": "1",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "2",
+                  "2",
+                  "2"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "1",
+                  "1",
+                  "1",
+                  "1"
+                ],
+                "profile": "local_vertex",
+                "selected_subsequences_checked": 7,
+                "target_gaps": [
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "weighted_gap": "0"
+              },
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "4/7",
+                  "2/7",
+                  "1/7"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "1/7",
+                    "1/3",
+                    "1"
+                  ],
+                  "q": [
+                    "1",
+                    "3/7",
+                    "1/7",
+                    "0"
+                  ]
+                },
+                "initial_R": "1",
+                "local_weight": "0",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "16/7",
+                  "16/7",
+                  "16/7"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "0",
+                  "4/7",
+                  "6/7",
+                  "1"
+                ],
+                "profile": "fair_boundary",
+                "selected_subsequences_checked": 7,
+                "target_gaps": [
+                  "2/7",
+                  "2/7",
+                  "2/7"
+                ],
+                "weighted_gap": "2"
+              },
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "1/3",
+                  "1/8",
+                  "1/24"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "1/6",
+                    "1/5",
+                    "1/4"
+                  ],
+                  "q": [
+                    "1",
+                    "5/12",
+                    "1/6",
+                    "1/16"
+                  ]
+                },
+                "initial_R": "1/2",
+                "local_weight": "1/2",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "7/3",
+                  "13/6",
+                  "25/12"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "1/2",
+                  "5/6",
+                  "23/24",
+                  "1"
+                ],
+                "profile": "positive_interior",
+                "selected_subsequences_checked": 7,
+                "target_gaps": [
+                  "1/3",
+                  "1/6",
+                  "1/12"
+                ],
+                "weighted_gap": "1"
+              },
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "1",
+                  "0",
+                  "0"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "1",
+                    "0",
+                    "0"
+                  ],
+                  "q": [
+                    "1",
+                    "0",
+                    "0",
+                    "0"
+                  ]
+                },
+                "initial_R": "1",
+                "local_weight": "0",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "4",
+                  "2",
+                  "2"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "0",
+                  "1",
+                  "1",
+                  "1"
+                ],
+                "profile": "axis_1",
+                "selected_subsequences_checked": 7,
+                "target_gaps": [
+                  "2",
+                  "0",
+                  "0"
+                ],
+                "weighted_gap": "2"
+              },
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "1/2",
+                  "1/2",
+                  "0"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "0",
+                    "1",
+                    "0"
+                  ],
+                  "q": [
+                    "1",
+                    "1/2",
+                    "0",
+                    "0"
+                  ]
+                },
+                "initial_R": "1",
+                "local_weight": "0",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "2",
+                  "3",
+                  "2"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "0",
+                  "1/2",
+                  "1",
+                  "1"
+                ],
+                "profile": "axis_2",
+                "selected_subsequences_checked": 7,
+                "target_gaps": [
+                  "0",
+                  "1",
+                  "0"
+                ],
+                "weighted_gap": "2"
+              },
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "1/2",
+                  "1/4",
+                  "1/4"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "q": [
+                    "1",
+                    "1/2",
+                    "1/4",
+                    "0"
+                  ]
+                },
+                "initial_R": "1",
+                "local_weight": "0",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "2",
+                  "2",
+                  "5/2"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "0",
+                  "1/2",
+                  "3/4",
+                  "1"
+                ],
+                "profile": "axis_3",
+                "selected_subsequences_checked": 7,
+                "target_gaps": [
+                  "0",
+                  "0",
+                  "1/2"
+                ],
+                "weighted_gap": "2"
+              }
+            ],
+            "k": 3,
+            "linear_programs": {
+              "fair_gap": {
+                "expected_exact": "2/7",
+                "max_equality_residual": 0.0,
+                "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                "minimum_fair_gap_slack": -4.440892098500626e-16,
+                "minimum_probability": 0.0,
+                "objective_error": 1.1102230246251565e-16,
+                "optimum": 0.2857142857142856,
+                "passed": true,
+                "status": 0
+              },
+              "weighted_chsh": {
+                "expected_exact": "16",
+                "max_equality_residual": 0.0,
+                "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                "minimum_fair_gap_slack": null,
+                "minimum_probability": 0.0,
+                "objective_error": 0.0,
+                "optimum": 16.0,
+                "passed": true,
+                "status": 0
+              },
+              "weighted_chsh_with_alice_bias_half": {
+                "expected_exact": "15",
+                "max_equality_residual": 0.0,
+                "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                "minimum_fair_gap_slack": null,
+                "minimum_probability": 0.0,
+                "objective_error": 0.0,
+                "optimum": 15.0,
+                "passed": true,
+                "status": 0
+              }
+            },
+            "passed": true,
+            "variables": 256
+          },
+          {
+            "archived_dimensions_match": true,
+            "constraint_counts": {
+              "alice_and_prefix_no_future_input": 620,
+              "alice_to_all_bobs": 256,
+              "normalization": 32
+            },
+            "equalities": 908,
+            "exact_profiles": [
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "0",
+                    "0",
+                    "0",
+                    "0"
+                  ],
+                  "q": [
+                    "1",
+                    "1/2",
+                    "1/4",
+                    "1/8",
+                    "1/16"
+                  ]
+                },
+                "initial_R": "0",
+                "local_weight": "1",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "2",
+                  "2",
+                  "2",
+                  "2"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "1",
+                  "1",
+                  "1",
+                  "1",
+                  "1"
+                ],
+                "profile": "local_vertex",
+                "selected_subsequences_checked": 15,
+                "target_gaps": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "weighted_gap": "0"
+              },
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "8/15",
+                  "4/15",
+                  "2/15",
+                  "1/15"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "1/15",
+                    "1/7",
+                    "1/3",
+                    "1"
+                  ],
+                  "q": [
+                    "1",
+                    "7/15",
+                    "1/5",
+                    "1/15",
+                    "0"
+                  ]
+                },
+                "initial_R": "1",
+                "local_weight": "0",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "32/15",
+                  "32/15",
+                  "32/15",
+                  "32/15"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "0",
+                  "8/15",
+                  "4/5",
+                  "14/15",
+                  "1"
+                ],
+                "profile": "fair_boundary",
+                "selected_subsequences_checked": 15,
+                "target_gaps": [
+                  "2/15",
+                  "2/15",
+                  "2/15",
+                  "2/15"
+                ],
+                "weighted_gap": "2"
+              },
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "5/16",
+                  "1/8",
+                  "3/64",
+                  "1/64"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "1/8",
+                    "1/7",
+                    "1/6",
+                    "1/5"
+                  ],
+                  "q": [
+                    "1",
+                    "7/16",
+                    "3/16",
+                    "5/64",
+                    "1/32"
+                  ]
+                },
+                "initial_R": "1/2",
+                "local_weight": "1/2",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "9/4",
+                  "17/8",
+                  "33/16",
+                  "65/32"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "1/2",
+                  "13/16",
+                  "15/16",
+                  "63/64",
+                  "1"
+                ],
+                "profile": "positive_interior",
+                "selected_subsequences_checked": 15,
+                "target_gaps": [
+                  "1/4",
+                  "1/8",
+                  "1/16",
+                  "1/32"
+                ],
+                "weighted_gap": "1"
+              },
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "1",
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "1",
+                    "0",
+                    "0",
+                    "0"
+                  ],
+                  "q": [
+                    "1",
+                    "0",
+                    "0",
+                    "0",
+                    "0"
+                  ]
+                },
+                "initial_R": "1",
+                "local_weight": "0",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "4",
+                  "2",
+                  "2",
+                  "2"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "0",
+                  "1",
+                  "1",
+                  "1",
+                  "1"
+                ],
+                "profile": "axis_1",
+                "selected_subsequences_checked": 15,
+                "target_gaps": [
+                  "2",
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "weighted_gap": "2"
+              },
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "1/2",
+                  "1/2",
+                  "0",
+                  "0"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "0",
+                    "1",
+                    "0",
+                    "0"
+                  ],
+                  "q": [
+                    "1",
+                    "1/2",
+                    "0",
+                    "0",
+                    "0"
+                  ]
+                },
+                "initial_R": "1",
+                "local_weight": "0",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "2",
+                  "3",
+                  "2",
+                  "2"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "0",
+                  "1/2",
+                  "1",
+                  "1",
+                  "1"
+                ],
+                "profile": "axis_2",
+                "selected_subsequences_checked": 15,
+                "target_gaps": [
+                  "0",
+                  "1",
+                  "0",
+                  "0"
+                ],
+                "weighted_gap": "2"
+              },
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "1/2",
+                  "1/4",
+                  "1/4",
+                  "0"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "0",
+                    "0",
+                    "1",
+                    "0"
+                  ],
+                  "q": [
+                    "1",
+                    "1/2",
+                    "1/4",
+                    "0",
+                    "0"
+                  ]
+                },
+                "initial_R": "1",
+                "local_weight": "0",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "2",
+                  "2",
+                  "5/2",
+                  "2"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "0",
+                  "1/2",
+                  "3/4",
+                  "1",
+                  "1"
+                ],
+                "profile": "axis_3",
+                "selected_subsequences_checked": 15,
+                "target_gaps": [
+                  "0",
+                  "0",
+                  "1/2",
+                  "0"
+                ],
+                "weighted_gap": "2"
+              },
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "1/2",
+                  "1/4",
+                  "1/8",
+                  "1/8"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "0",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "q": [
+                    "1",
+                    "1/2",
+                    "1/4",
+                    "1/8",
+                    "0"
+                  ]
+                },
+                "initial_R": "1",
+                "local_weight": "0",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "2",
+                  "2",
+                  "2",
+                  "9/4"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "0",
+                  "1/2",
+                  "3/4",
+                  "7/8",
+                  "1"
+                ],
+                "profile": "axis_4",
+                "selected_subsequences_checked": 15,
+                "target_gaps": [
+                  "0",
+                  "0",
+                  "0",
+                  "1/4"
+                ],
+                "weighted_gap": "2"
+              }
+            ],
+            "k": 4,
+            "linear_programs": {
+              "fair_gap": {
+                "expected_exact": "2/15",
+                "max_equality_residual": 2.220446049250313e-16,
+                "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                "minimum_fair_gap_slack": 0.0,
+                "minimum_probability": 0.0,
+                "objective_error": 4.718447854656915e-16,
+                "optimum": 0.13333333333333286,
+                "passed": true,
+                "status": 0
+              },
+              "weighted_chsh": {
+                "expected_exact": "32",
+                "max_equality_residual": 0.0,
+                "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                "minimum_fair_gap_slack": null,
+                "minimum_probability": 0.0,
+                "objective_error": 0.0,
+                "optimum": 32.0,
+                "passed": true,
+                "status": 0
+              },
+              "weighted_chsh_with_alice_bias_half": {
+                "expected_exact": "31",
+                "max_equality_residual": 0.0,
+                "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                "minimum_fair_gap_slack": null,
+                "minimum_probability": 0.0,
+                "objective_error": 0.0,
+                "optimum": 31.0,
+                "passed": true,
+                "status": 0
+              }
+            },
+            "passed": true,
+            "variables": 1024
+          },
+          {
+            "archived_dimensions_match": true,
+            "constraint_counts": {
+              "alice_and_prefix_no_future_input": 2604,
+              "alice_to_all_bobs": 1024,
+              "normalization": 64
+            },
+            "equalities": 3692,
+            "exact_profiles": [
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0"
+                  ],
+                  "q": [
+                    "1",
+                    "1/2",
+                    "1/4",
+                    "1/8",
+                    "1/16",
+                    "1/32"
+                  ]
+                },
+                "initial_R": "0",
+                "local_weight": "1",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "2",
+                  "2",
+                  "2",
+                  "2",
+                  "2"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "1",
+                  "1",
+                  "1",
+                  "1",
+                  "1",
+                  "1"
+                ],
+                "profile": "local_vertex",
+                "selected_subsequences_checked": 31,
+                "target_gaps": [
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "weighted_gap": "0"
+              },
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "16/31",
+                  "8/31",
+                  "4/31",
+                  "2/31",
+                  "1/31"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "1/31",
+                    "1/15",
+                    "1/7",
+                    "1/3",
+                    "1"
+                  ],
+                  "q": [
+                    "1",
+                    "15/31",
+                    "7/31",
+                    "3/31",
+                    "1/31",
+                    "0"
+                  ]
+                },
+                "initial_R": "1",
+                "local_weight": "0",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "64/31",
+                  "64/31",
+                  "64/31",
+                  "64/31",
+                  "64/31"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "0",
+                  "16/31",
+                  "24/31",
+                  "28/31",
+                  "30/31",
+                  "1"
+                ],
+                "profile": "fair_boundary",
+                "selected_subsequences_checked": 31,
+                "target_gaps": [
+                  "2/31",
+                  "2/31",
+                  "2/31",
+                  "2/31",
+                  "2/31"
+                ],
+                "weighted_gap": "2"
+              },
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "3/10",
+                  "1/8",
+                  "1/20",
+                  "3/160",
+                  "1/160"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "1/10",
+                    "1/9",
+                    "1/8",
+                    "1/7",
+                    "1/6"
+                  ],
+                  "q": [
+                    "1",
+                    "9/20",
+                    "1/5",
+                    "7/80",
+                    "3/80",
+                    "1/64"
+                  ]
+                },
+                "initial_R": "1/2",
+                "local_weight": "1/2",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "11/5",
+                  "21/10",
+                  "41/20",
+                  "81/40",
+                  "161/80"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "1/2",
+                  "4/5",
+                  "37/40",
+                  "39/40",
+                  "159/160",
+                  "1"
+                ],
+                "profile": "positive_interior",
+                "selected_subsequences_checked": 31,
+                "target_gaps": [
+                  "1/5",
+                  "1/10",
+                  "1/20",
+                  "1/40",
+                  "1/80"
+                ],
+                "weighted_gap": "1"
+              },
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "1",
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "1",
+                    "0",
+                    "0",
+                    "0",
+                    "0"
+                  ],
+                  "q": [
+                    "1",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0"
+                  ]
+                },
+                "initial_R": "1",
+                "local_weight": "0",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "4",
+                  "2",
+                  "2",
+                  "2",
+                  "2"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "0",
+                  "1",
+                  "1",
+                  "1",
+                  "1",
+                  "1"
+                ],
+                "profile": "axis_1",
+                "selected_subsequences_checked": 31,
+                "target_gaps": [
+                  "2",
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "weighted_gap": "2"
+              },
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "1/2",
+                  "1/2",
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "0",
+                    "1",
+                    "0",
+                    "0",
+                    "0"
+                  ],
+                  "q": [
+                    "1",
+                    "1/2",
+                    "0",
+                    "0",
+                    "0",
+                    "0"
+                  ]
+                },
+                "initial_R": "1",
+                "local_weight": "0",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "2",
+                  "3",
+                  "2",
+                  "2",
+                  "2"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "0",
+                  "1/2",
+                  "1",
+                  "1",
+                  "1",
+                  "1"
+                ],
+                "profile": "axis_2",
+                "selected_subsequences_checked": 31,
+                "target_gaps": [
+                  "0",
+                  "1",
+                  "0",
+                  "0",
+                  "0"
+                ],
+                "weighted_gap": "2"
+              },
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "1/2",
+                  "1/4",
+                  "1/4",
+                  "0",
+                  "0"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "0",
+                    "0",
+                    "1",
+                    "0",
+                    "0"
+                  ],
+                  "q": [
+                    "1",
+                    "1/2",
+                    "1/4",
+                    "0",
+                    "0",
+                    "0"
+                  ]
+                },
+                "initial_R": "1",
+                "local_weight": "0",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "2",
+                  "2",
+                  "5/2",
+                  "2",
+                  "2"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "0",
+                  "1/2",
+                  "3/4",
+                  "1",
+                  "1",
+                  "1"
+                ],
+                "profile": "axis_3",
+                "selected_subsequences_checked": 31,
+                "target_gaps": [
+                  "0",
+                  "0",
+                  "1/2",
+                  "0",
+                  "0"
+                ],
+                "weighted_gap": "2"
+              },
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "1/2",
+                  "1/4",
+                  "1/8",
+                  "1/8",
+                  "0"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "0",
+                    "0",
+                    "0",
+                    "1",
+                    "0"
+                  ],
+                  "q": [
+                    "1",
+                    "1/2",
+                    "1/4",
+                    "1/8",
+                    "0",
+                    "0"
+                  ]
+                },
+                "initial_R": "1",
+                "local_weight": "0",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "2",
+                  "2",
+                  "2",
+                  "9/4",
+                  "2"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "0",
+                  "1/2",
+                  "3/4",
+                  "7/8",
+                  "1",
+                  "1"
+                ],
+                "profile": "axis_4",
+                "selected_subsequences_checked": 31,
+                "target_gaps": [
+                  "0",
+                  "0",
+                  "0",
+                  "1/4",
+                  "0"
+                ],
+                "weighted_gap": "2"
+              },
+              {
+                "checks": {
+                  "all_eight_orientations_obey_one_step_bound": true,
+                  "all_joint_tons_equalities": true,
+                  "all_maximal_chsh_values_match": true,
+                  "all_selected_subsequence_bounds": true,
+                  "nonnegative": true,
+                  "potential_in_unit_interval": true,
+                  "potential_nondecreasing": true,
+                  "refined_weighted_bound": true
+                },
+                "consumption_weights": [
+                  "1/2",
+                  "1/4",
+                  "1/8",
+                  "1/16",
+                  "1/16"
+                ],
+                "final_R": "0",
+                "hardy_parameters": {
+                  "feasible": true,
+                  "gaps_reproduced": true,
+                  "p": [
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "q": [
+                    "1",
+                    "1/2",
+                    "1/4",
+                    "1/8",
+                    "1/16",
+                    "0"
+                  ]
+                },
+                "initial_R": "1",
+                "local_weight": "0",
+                "max_exact_residual_by_constraint": {
+                  "alice_and_prefix_no_future_input": "0",
+                  "alice_to_all_bobs": "0",
+                  "normalization": "0"
+                },
+                "maximal_chsh_values": [
+                  "2",
+                  "2",
+                  "2",
+                  "2",
+                  "17/8"
+                ],
+                "passed": true,
+                "potentials_M": [
+                  "0",
+                  "1/2",
+                  "3/4",
+                  "7/8",
+                  "15/16",
+                  "1"
+                ],
+                "profile": "axis_5",
+                "selected_subsequences_checked": 31,
+                "target_gaps": [
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "1/8"
+                ],
+                "weighted_gap": "2"
+              }
+            ],
+            "k": 5,
+            "linear_programs": {
+              "fair_gap": {
+                "expected_exact": "2/31",
+                "max_equality_residual": 2.7755575615628914e-16,
+                "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                "minimum_fair_gap_slack": 0.0,
+                "minimum_probability": 0.0,
+                "objective_error": 4.996003610813204e-16,
+                "optimum": 0.06451612903225756,
+                "passed": true,
+                "status": 0
+              },
+              "weighted_chsh": {
+                "expected_exact": "64",
+                "max_equality_residual": 0.0,
+                "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                "minimum_fair_gap_slack": null,
+                "minimum_probability": 0.0,
+                "objective_error": 0.0,
+                "optimum": 64.0,
+                "passed": true,
+                "status": 0
+              },
+              "weighted_chsh_with_alice_bias_half": {
+                "expected_exact": "63",
+                "max_equality_residual": 0.0,
+                "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+                "minimum_fair_gap_slack": null,
+                "minimum_probability": 0.0,
+                "objective_error": 0.0,
+                "optimum": 63.0,
+                "passed": true,
+                "status": 0
+              }
+            },
+            "passed": true,
+            "variables": 4096
+          }
+        ],
+        "environment": {
+          "numpy": "2.3.5",
+          "python": "3.12.14",
+          "scipy": "1.17.0"
+        },
+        "expected_sha256": "58f56915a2ce5271d3eaa74808fe74650433de5138dd6ffe270104742a744999",
+        "floating_tolerance": 1e-08,
+        "orientation_count": 8,
+        "schema_version": 1,
+        "scope": "Exact rational finite kernels and full finite TONS LPs. The arbitrary-K theorem is analytic; these checks do not establish historical priority or exact quantum attainability.",
+        "source_sha256": "ba1e83f6f76e9b6326c785df74cc747d8058d259ac1bd6a5387d75b65eec848a",
+        "status": "pass"
+      },
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "passed": true,
+      "program": "verify_quantum_protocol.py",
+      "report": {
+        "cases": [
+          {
+            "chsh_margin_max_abs_error": 2.0816681711721685e-16,
+            "depth": 1,
+            "expected_common_margin": 0.10666666666666667,
+            "full_transcript_checks": {
+              "alice_to_bob_max_abs_error": 1.1102230246251565e-16,
+              "conditional_entries": 16,
+              "marginalization_max_abs_error": 0.0,
+              "minimum_probability": 0.0,
+              "normalization_max_abs_error": 2.220446049250313e-16,
+              "tons_prefix_max_abs_error": 3.3306690738754696e-16
+            },
+            "id": "K1_a1_4",
+            "marginal_probability_max_abs_error": 2.220446049250313e-16,
+            "observed_margin_max": 0.10666666666666647,
+            "observed_margin_min": 0.10666666666666647,
+            "physical_checks": {
+              "flag_max_abs_error": 2.220446049250313e-16,
+              "source_table_max_abs_error": 2.220446049250313e-16,
+              "state_min_eigenvalue": -9.760557580017436e-17,
+              "state_trace_max_abs_error": 2.220446049250313e-16
+            },
+            "shape": 0.25
+          },
+          {
+            "chsh_margin_max_abs_error": 2.914335439641036e-16,
+            "depth": 2,
+            "expected_common_margin": 0.08333333333333333,
+            "full_transcript_checks": {
+              "alice_to_bob_max_abs_error": 1.1102230246251565e-16,
+              "conditional_entries": 64,
+              "marginalization_max_abs_error": 1.1102230246251565e-16,
+              "minimum_probability": 0.0,
+              "normalization_max_abs_error": 4.440892098500626e-16,
+              "tons_prefix_max_abs_error": 5.551115123125783e-16
+            },
+            "id": "K2_a1_1",
+            "marginal_probability_max_abs_error": 2.220446049250313e-16,
+            "observed_margin_max": 0.08333333333333304,
+            "observed_margin_min": 0.08333333333333304,
+            "physical_checks": {
+              "flag_max_abs_error": 2.220446049250313e-16,
+              "source_table_max_abs_error": 2.220446049250313e-16,
+              "state_min_eigenvalue": -1.6180691317439356e-16,
+              "state_trace_max_abs_error": 2.220446049250313e-16
+            },
+            "shape": 1.0
+          },
+          {
+            "chsh_margin_max_abs_error": 5.2562121322097255e-16,
+            "depth": 3,
+            "expected_common_margin": 0.005170542048524325,
+            "full_transcript_checks": {
+              "alice_to_bob_max_abs_error": 1.1102230246251565e-16,
+              "conditional_entries": 256,
+              "marginalization_max_abs_error": 2.220446049250313e-16,
+              "minimum_probability": -2.0477562046052738e-16,
+              "normalization_max_abs_error": 2.220446049250313e-16,
+              "tons_prefix_max_abs_error": 4.440892098500626e-16
+            },
+            "id": "K3_a1_8",
+            "marginal_probability_max_abs_error": 2.220446049250313e-16,
+            "observed_margin_max": 0.005170542048524851,
+            "observed_margin_min": 0.005170542048524851,
+            "physical_checks": {
+              "flag_max_abs_error": 8.326672684688674e-17,
+              "source_table_max_abs_error": 4.440892098500626e-16,
+              "state_min_eigenvalue": -7.251009652874701e-17,
+              "state_trace_max_abs_error": 0.0
+            },
+            "shape": 0.125
+          },
+          {
+            "chsh_margin_max_abs_error": 6.735063895479954e-16,
+            "depth": 4,
+            "expected_common_margin": 0.0020604395604395605,
+            "full_transcript_checks": {
+              "alice_to_bob_max_abs_error": 1.1102230246251565e-16,
+              "conditional_entries": 1024,
+              "marginalization_max_abs_error": 2.220446049250313e-16,
+              "minimum_probability": -3.6863770224141966e-17,
+              "normalization_max_abs_error": 2.220446049250313e-16,
+              "tons_prefix_max_abs_error": 2.220446049250313e-16
+            },
+            "id": "K4_a3_1",
+            "marginal_probability_max_abs_error": 1.1102230246251565e-16,
+            "observed_margin_max": 0.002060439560439331,
+            "observed_margin_min": 0.002060439560438887,
+            "physical_checks": {
+              "flag_max_abs_error": 2.220446049250313e-16,
+              "source_table_max_abs_error": 1.1102230246251565e-16,
+              "state_min_eigenvalue": -7.563440822136401e-17,
+              "state_trace_max_abs_error": 2.220446049250313e-16
+            },
+            "shape": 3.0
+          },
+          {
+            "chsh_margin_max_abs_error": 4.735795089416683e-16,
+            "depth": 4,
+            "expected_common_margin": 0.008333333333333333,
+            "full_transcript_checks": {
+              "alice_to_bob_max_abs_error": 1.1102230246251565e-16,
+              "conditional_entries": 1024,
+              "marginalization_max_abs_error": 3.3306690738754696e-16,
+              "minimum_probability": -2.1684043449710084e-19,
+              "normalization_max_abs_error": 4.440892098500626e-16,
+              "tons_prefix_max_abs_error": 6.661338147750939e-16
+            },
+            "id": "K4_a1_1",
+            "marginal_probability_max_abs_error": 2.498001805406602e-16,
+            "observed_margin_max": 0.008333333333333748,
+            "observed_margin_min": 0.00833333333333286,
+            "physical_checks": {
+              "flag_max_abs_error": 3.3306690738754696e-16,
+              "source_table_max_abs_error": 2.220446049250313e-16,
+              "state_min_eigenvalue": -1.6180691317439356e-16,
+              "state_trace_max_abs_error": 4.440892098500626e-16
+            },
+            "shape": 1.0
+          },
+          {
+            "chsh_margin_max_abs_error": 2.6281060661048627e-16,
+            "depth": 6,
+            "expected_common_margin": 0.0012748202775553922,
+            "id": "K6_a2_3",
+            "marginal_probability_max_abs_error": 4.440892098500626e-16,
+            "observed_margin_max": 0.001274820277555655,
+            "observed_margin_min": 0.001274820277555655,
+            "physical_checks": {
+              "flag_max_abs_error": 2.220446049250313e-16,
+              "source_table_max_abs_error": 3.3306690738754696e-16,
+              "state_min_eigenvalue": -1.897349070086838e-16,
+              "state_trace_max_abs_error": 4.440892098500626e-16
+            },
+            "shape": 0.6666666666666666
+          },
+          {
+            "chsh_margin_max_abs_error": 8.271649424435035e-16,
+            "depth": 8,
+            "expected_common_margin": 0.00021859659279638838,
+            "id": "K8_a1_2",
+            "marginal_probability_max_abs_error": 3.3306690738754696e-16,
+            "observed_margin_max": 0.00021859659279721555,
+            "observed_margin_min": 0.00021859659279677146,
+            "physical_checks": {
+              "flag_max_abs_error": 2.220446049250313e-16,
+              "source_table_max_abs_error": 4.440892098500626e-16,
+              "state_min_eigenvalue": -1.1212842021564735e-16,
+              "state_trace_max_abs_error": 2.220446049250313e-16
+            },
+            "shape": 0.5
+          },
+          {
+            "chsh_margin_max_abs_error": 9.96646070793722e-16,
+            "depth": 12,
+            "expected_common_margin": 7.679363890458536e-06,
+            "id": "K12_a1_3",
+            "marginal_probability_max_abs_error": 4.440892098500626e-16,
+            "observed_margin_max": 7.679363891455182e-06,
+            "observed_margin_min": 7.679363890567004e-06,
+            "physical_checks": {
+              "flag_max_abs_error": 1.1102230246251565e-16,
+              "source_table_max_abs_error": 2.220446049250313e-16,
+              "state_min_eigenvalue": -1.7422990725505888e-16,
+              "state_trace_max_abs_error": 2.220446049250313e-16
+            },
+            "shape": 0.3333333333333333
+          },
+          {
+            "chsh_margin_max_abs_error": 3.938294081201528e-16,
+            "depth": 20,
+            "expected_common_margin": 1.3500726708504102e-08,
+            "id": "K20_a1_5",
+            "marginal_probability_max_abs_error": 3.3306690738754696e-16,
+            "observed_margin_max": 1.3500726758763903e-08,
+            "observed_margin_min": 1.3500726314674694e-08,
+            "physical_checks": {
+              "flag_max_abs_error": 3.3306690738754696e-16,
+              "source_table_max_abs_error": 2.7755575615628914e-17,
+              "state_min_eigenvalue": -1.9408005921037866e-16,
+              "state_trace_max_abs_error": 3.3306690738754696e-16
+            },
+            "shape": 0.2
+          }
+        ],
+        "full_transcript_cases": 5,
+        "number_of_cases": 9,
+        "scope": "Finite Born/instrument verification and exact rational reference checks; no statistical-rate claim.",
+        "source": "https://arxiv.org/pdf/2607.24700v1",
+        "status": "pass",
+        "tolerances": {
+          "gap_absolute": 1e-13,
+          "gap_relative": 1e-05,
+          "probability_absolute": 2e-12
+        }
+      },
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "passed": true,
+      "program": "verify_evidence.py",
+      "report": {
+        "CHSH_relabellings_checked": 64,
+        "analytic_CHSH_checks": [
+          {
+            "analytic_nu_nats": 0.0,
+            "convex_optimality_gap_nats": 0.0,
+            "correlation": 0.4,
+            "locality_feasibility_residual": 0.0,
+            "maximum_CHSH": 1.5999999999999999,
+            "method": "local_feasibility",
+            "nu_nats": 0.0
+          },
+          {
+            "analytic_nu_nats": 0.0029673206746885783,
+            "convex_optimality_gap_nats": 4.107825191113079e-15,
+            "correlation": 0.565685424949238,
+            "maximum_CHSH": 2.262741699796952,
+            "method": "convex_kl",
+            "nu_nats": 0.002967320674688469,
+            "simplex_feasibility_residual": 0.0
+          },
+          {
+            "analytic_nu_nats": 0.0320745864801017,
+            "convex_optimality_gap_nats": 1.7763568394002505e-15,
+            "correlation": 0.7071067811865475,
+            "maximum_CHSH": 2.82842712474619,
+            "method": "convex_kl",
+            "nu_nats": 0.03207458648010192,
+            "simplex_feasibility_residual": 1.1102230246251565e-16
+          },
+          {
+            "analytic_nu_nats": 0.28768207245178085,
+            "convex_optimality_gap_nats": 3.219646771412954e-15,
+            "correlation": 1.0,
+            "maximum_CHSH": 4.0,
+            "method": "convex_kl",
+            "nu_nats": 0.2876820724517817,
+            "simplex_feasibility_residual": 0.0
+          }
+        ],
+        "biased_design_whitening_cases": [
+          {
+            "convex_optimality_gap_nats": 5.084066201366255e-08,
+            "maximum_CHSH": 2.3759451880342812,
+            "method": "convex_kl",
+            "nu_nats": 0.005168884832894135,
+            "simplex_feasibility_residual": 0.0,
+            "whitening_upper_bound_nats": 0.17224815166521862
+          },
+          {
+            "convex_optimality_gap_nats": 3.632879348458573e-07,
+            "maximum_CHSH": 2.547054498661905,
+            "method": "convex_kl",
+            "nu_nats": 0.011243092413639804,
+            "simplex_feasibility_residual": 0.0,
+            "whitening_upper_bound_nats": 0.24179041240590773
+          },
+          {
+            "convex_optimality_gap_nats": 1.5231268857274216e-07,
+            "maximum_CHSH": 3.1380428189234024,
+            "method": "convex_kl",
+            "nu_nats": 0.05173366775166531,
+            "simplex_feasibility_residual": 2.220446049250313e-16,
+            "whitening_upper_bound_nats": 0.45045211894887727
+          },
+          {
+            "convex_optimality_gap_nats": 1.93818811444757e-07,
+            "maximum_CHSH": 3.21546014560718,
+            "method": "convex_kl",
+            "nu_nats": 0.05929452199182875,
+            "simplex_feasibility_residual": 0.0,
+            "whitening_upper_bound_nats": 0.4748232914939429
+          },
+          {
+            "convex_optimality_gap_nats": 6.255872087024272e-08,
+            "maximum_CHSH": 3.5496238345869013,
+            "method": "convex_kl",
+            "nu_nats": 0.10517315664902034,
+            "simplex_feasibility_residual": 0.0,
+            "whitening_upper_bound_nats": 0.5736944552248037
+          },
+          {
+            "convex_optimality_gap_nats": 1.9569531528595974e-07,
+            "maximum_CHSH": 3.4774575534709355,
+            "method": "convex_kl",
+            "nu_nats": 0.09294053391462195,
+            "simplex_feasibility_residual": 0.0,
+            "whitening_upper_bound_nats": 0.5531542581338423
+          },
+          {
+            "convex_optimality_gap_nats": 1.1502764030169033e-07,
+            "maximum_CHSH": 2.0928944657855144,
+            "method": "convex_kl",
+            "nu_nats": 0.0003049069281914566,
+            "simplex_feasibility_residual": 0.0,
+            "whitening_upper_bound_nats": 0.04540083916993623
+          },
+          {
+            "convex_optimality_gap_nats": 1.0052552124051317e-07,
+            "maximum_CHSH": 3.0761331057880787,
+            "method": "convex_kl",
+            "nu_nats": 0.044752708794988605,
+            "simplex_feasibility_residual": 0.0,
+            "whitening_upper_bound_nats": 0.430526142510065
+          },
+          {
+            "convex_optimality_gap_nats": 4.1798176064755665e-07,
+            "maximum_CHSH": 3.913406791140728,
+            "method": "convex_kl",
+            "nu_nats": 0.17823883389892414,
+            "simplex_feasibility_residual": 0.0,
+            "whitening_upper_bound_nats": 0.6712611161560418
+          },
+          {
+            "convex_optimality_gap_nats": 2.6087841442645754e-07,
+            "maximum_CHSH": 3.45524592076582,
+            "method": "convex_kl",
+            "nu_nats": 0.08916169600384768,
+            "simplex_feasibility_residual": 2.220446049250313e-16,
+            "whitening_upper_bound_nats": 0.5467464523511882
+          },
+          {
+            "convex_optimality_gap_nats": 2.022849376892566e-08,
+            "maximum_CHSH": 3.383027374653772,
+            "method": "convex_kl",
+            "nu_nats": 0.07962203227691245,
+            "simplex_feasibility_residual": 0.0,
+            "whitening_upper_bound_nats": 0.5256238010337834
+          },
+          {
+            "convex_optimality_gap_nats": 5.848272088826434e-08,
+            "maximum_CHSH": 2.684897949870798,
+            "method": "convex_kl",
+            "nu_nats": 0.017497614624333056,
+            "simplex_feasibility_residual": 0.0,
+            "whitening_upper_bound_nats": 0.29449553918166993
+          }
+        ],
+        "common_setting_boundary": {
+          "classical_budget_slack_nats": 20.737827479855266,
+          "final_alice_conditional_entropy_nats": 0.41649553069968925,
+          "final_pure_branch_entanglement_nats": 4.653391003983042e-16,
+          "initial_alice_entropy_nats": 0.6931471805599453,
+          "initial_entanglement_nats": 0.6931471805599453,
+          "quantum_budget_slack_nats": 21.154323010554954,
+          "setting_total_correlation_nats": 21.487562597358284,
+          "stages": [
+            {
+              "classical_entropy_drop_nats": 0.2766516498602578,
+              "convex_optimality_gap_nats": 3.4416913763379853e-15,
+              "maximum_CHSH": 2.828427124746189,
+              "method": "convex_kl",
+              "nu_nats": 0.03207458648010165,
+              "pure_branch_entanglement_drop_nats": 0.693147180559944,
+              "setting_information_nats": 0.0,
+              "simplex_feasibility_residual": 0.0
+            },
+            {
+              "classical_entropy_drop_nats": 3.3306690738754696e-16,
+              "convex_optimality_gap_nats": 1.9984014443252818e-15,
+              "maximum_CHSH": 2.82842712474619,
+              "method": "convex_kl",
+              "nu_nats": 0.03207458648010179,
+              "pure_branch_entanglement_drop_nats": 3.4128087778475466e-16,
+              "setting_information_nats": 0.6931471805599453,
+              "simplex_feasibility_residual": 0.0
+            },
+            {
+              "classical_entropy_drop_nats": -2.220446049250313e-16,
+              "convex_optimality_gap_nats": 1.9984014443252818e-15,
+              "maximum_CHSH": 2.8284271247461907,
+              "method": "convex_kl",
+              "nu_nats": 0.03207458648010253,
+              "pure_branch_entanglement_drop_nats": 8.16845140145712e-16,
+              "setting_information_nats": 0.6931471805599454,
+              "simplex_feasibility_residual": 2.220446049250313e-16
+            },
+            {
+              "classical_entropy_drop_nats": 1.1102230246251565e-16,
+              "convex_optimality_gap_nats": 1.9984014443252818e-15,
+              "maximum_CHSH": 2.8284271247461907,
+              "method": "convex_kl",
+              "nu_nats": 0.03207458648010229,
+              "pure_branch_entanglement_drop_nats": -3.0701961710173635e-16,
+              "setting_information_nats": 0.6931471805599453,
+              "simplex_feasibility_residual": 0.0
+            },
+            {
+              "classical_entropy_drop_nats": -3.3306690738754696e-16,
+              "convex_optimality_gap_nats": 1.7763568394002505e-15,
+              "maximum_CHSH": 2.8284271247461907,
+              "method": "convex_kl",
+              "nu_nats": 0.03207458648010232,
+              "pure_branch_entanglement_drop_nats": -3.3306690738754716e-16,
+              "setting_information_nats": 0.6931471805599453,
+              "simplex_feasibility_residual": 1.1102230246251565e-16
+            },
+            {
+              "classical_entropy_drop_nats": 2.220446049250313e-16,
+              "convex_optimality_gap_nats": 1.7763568394002505e-15,
+              "maximum_CHSH": 2.8284271247461907,
+              "method": "convex_kl",
+              "nu_nats": 0.0320745864801022,
+              "pure_branch_entanglement_drop_nats": 3.3306690738754706e-16,
+              "setting_information_nats": 0.6931471805599452,
+              "simplex_feasibility_residual": 2.220446049250313e-16
+            },
+            {
+              "classical_entropy_drop_nats": -3.3306690738754696e-16,
+              "convex_optimality_gap_nats": 2.6645352591003757e-15,
+              "maximum_CHSH": 2.8284271247461907,
+              "method": "convex_kl",
+              "nu_nats": 0.0320745864801022,
+              "pure_branch_entanglement_drop_nats": -3.3306690738754726e-16,
+              "setting_information_nats": 0.6931471805599452,
+              "simplex_feasibility_residual": 0.0
+            },
+            {
+              "classical_entropy_drop_nats": 1.1102230246251565e-16,
+              "convex_optimality_gap_nats": 1.3322676295501878e-15,
+              "maximum_CHSH": 2.8284271247461916,
+              "method": "convex_kl",
+              "nu_nats": 0.03207458648010248,
+              "pure_branch_entanglement_drop_nats": 3.3306690738754716e-16,
+              "setting_information_nats": 0.6931471805599452,
+              "simplex_feasibility_residual": 1.1102230246251565e-16
+            },
+            {
+              "classical_entropy_drop_nats": -2.220446049250313e-16,
+              "convex_optimality_gap_nats": 4.440892098500626e-15,
+              "maximum_CHSH": 2.8284271247461916,
+              "method": "convex_kl",
+              "nu_nats": 0.032074586480102446,
+              "pure_branch_entanglement_drop_nats": -3.3306690738754736e-16,
+              "setting_information_nats": 0.6931471805599452,
+              "simplex_feasibility_residual": 0.0
+            },
+            {
+              "classical_entropy_drop_nats": 1.6653345369377348e-16,
+              "convex_optimality_gap_nats": 2.886579864025407e-15,
+              "maximum_CHSH": 2.8284271247461907,
+              "method": "convex_kl",
+              "nu_nats": 0.032074586480101974,
+              "pure_branch_entanglement_drop_nats": 3.3306690738754716e-16,
+              "setting_information_nats": 0.6931471805599451,
+              "simplex_feasibility_residual": 0.0
+            },
+            {
+              "classical_entropy_drop_nats": -3.3306690738754696e-16,
+              "convex_optimality_gap_nats": 4.440892098500626e-15,
+              "maximum_CHSH": 2.8284271247461907,
+              "method": "convex_kl",
+              "nu_nats": 0.032074586480102474,
+              "pure_branch_entanglement_drop_nats": -3.3306690738754746e-16,
+              "setting_information_nats": 0.6931471805599451,
+              "simplex_feasibility_residual": 1.1102230246251565e-16
+            },
+            {
+              "classical_entropy_drop_nats": 1.6653345369377348e-16,
+              "convex_optimality_gap_nats": 3.9968028886505635e-15,
+              "maximum_CHSH": 2.8284271247461907,
+              "method": "convex_kl",
+              "nu_nats": 0.032074586480102016,
+              "pure_branch_entanglement_drop_nats": 3.3306690738754736e-16,
+              "setting_information_nats": 0.6931471805599448,
+              "simplex_feasibility_residual": 0.0
+            },
+            {
+              "classical_entropy_drop_nats": -2.7755575615628914e-16,
+              "convex_optimality_gap_nats": 3.774758283725532e-15,
+              "maximum_CHSH": 2.8284271247461907,
+              "method": "convex_kl",
+              "nu_nats": 0.03207458648010238,
+              "pure_branch_entanglement_drop_nats": -3.3306690738754746e-16,
+              "setting_information_nats": 0.6931471805599448,
+              "simplex_feasibility_residual": 0.0
+            },
+            {
+              "classical_entropy_drop_nats": 1.1102230246251565e-16,
+              "convex_optimality_gap_nats": 3.9968028886505635e-15,
+              "maximum_CHSH": 2.8284271247461907,
+              "method": "convex_kl",
+              "nu_nats": 0.03207458648010211,
+              "pure_branch_entanglement_drop_nats": 3.3306690738754736e-16,
+              "setting_information_nats": 0.6931471805599448,
+              "simplex_feasibility_residual": 0.0
+            },
+            {
+              "classical_entropy_drop_nats": -2.7755575615628914e-16,
+              "convex_optimality_gap_nats": 3.774758283725532e-15,
+              "maximum_CHSH": 2.8284271247461907,
+              "method": "convex_kl",
+              "nu_nats": 0.032074586480102224,
+              "pure_branch_entanglement_drop_nats": -3.3306690738754775e-16,
+              "setting_information_nats": 0.6931471805599448,
+              "simplex_feasibility_residual": 0.0
+            },
+            {
+              "classical_entropy_drop_nats": 2.220446049250313e-16,
+              "convex_optimality_gap_nats": 3.9968028886505635e-15,
+              "maximum_CHSH": 2.8284271247461907,
+              "method": "convex_kl",
+              "nu_nats": 0.03207458648010224,
+              "pure_branch_entanglement_drop_nats": 3.3306690738754755e-16,
+              "setting_information_nats": 0.6931471805599447,
+              "simplex_feasibility_residual": 0.0
+            },
+            {
+              "classical_entropy_drop_nats": -3.885780586188048e-16,
+              "convex_optimality_gap_nats": 4.884981308350689e-15,
+              "maximum_CHSH": 2.8284271247461916,
+              "method": "convex_kl",
+              "nu_nats": 0.03207458648010243,
+              "pure_branch_entanglement_drop_nats": -3.3306690738754765e-16,
+              "setting_information_nats": 0.6931471805599447,
+              "simplex_feasibility_residual": 0.0
+            },
+            {
+              "classical_entropy_drop_nats": 1.6653345369377348e-16,
+              "convex_optimality_gap_nats": 6.661338147750939e-15,
+              "maximum_CHSH": 2.8284271247461907,
+              "method": "convex_kl",
+              "nu_nats": 0.032074586480102196,
+              "pure_branch_entanglement_drop_nats": 3.3306690738754755e-16,
+              "setting_information_nats": 0.6931471805599446,
+              "simplex_feasibility_residual": 0.0
+            },
+            {
+              "classical_entropy_drop_nats": -2.220446049250313e-16,
+              "convex_optimality_gap_nats": 6.439293542825908e-15,
+              "maximum_CHSH": 2.8284271247461916,
+              "method": "convex_kl",
+              "nu_nats": 0.03207458648010235,
+              "pure_branch_entanglement_drop_nats": -3.3306690738754785e-16,
+              "setting_information_nats": 0.6931471805599446,
+              "simplex_feasibility_residual": 1.1102230246251565e-16
+            },
+            {
+              "classical_entropy_drop_nats": 1.1102230246251565e-16,
+              "convex_optimality_gap_nats": 6.8833827526759706e-15,
+              "maximum_CHSH": 2.8284271247461907,
+              "method": "convex_kl",
+              "nu_nats": 0.03207458648010221,
+              "pure_branch_entanglement_drop_nats": 3.3306690738754765e-16,
+              "setting_information_nats": 0.6931471805599445,
+              "simplex_feasibility_residual": 0.0
+            },
+            {
+              "classical_entropy_drop_nats": -2.7755575615628914e-16,
+              "convex_optimality_gap_nats": 7.771561172376096e-15,
+              "maximum_CHSH": 2.8284271247461907,
+              "method": "convex_kl",
+              "nu_nats": 0.032074586480102224,
+              "pure_branch_entanglement_drop_nats": -3.3306690738754785e-16,
+              "setting_information_nats": 0.6931471805599445,
+              "simplex_feasibility_residual": 0.0
+            },
+            {
+              "classical_entropy_drop_nats": 1.6653345369377348e-16,
+              "convex_optimality_gap_nats": 7.327471962526033e-15,
+              "maximum_CHSH": 2.8284271247461907,
+              "method": "convex_kl",
+              "nu_nats": 0.032074586480102384,
+              "pure_branch_entanglement_drop_nats": 3.3306690738754775e-16,
+              "setting_information_nats": 0.6931471805599444,
+              "simplex_feasibility_residual": 0.0
+            },
+            {
+              "classical_entropy_drop_nats": -3.3306690738754696e-16,
+              "convex_optimality_gap_nats": 7.327471962526033e-15,
+              "maximum_CHSH": 2.8284271247461907,
+              "method": "convex_kl",
+              "nu_nats": 0.03207458648010238,
+              "pure_branch_entanglement_drop_nats": -3.3306690738754785e-16,
+              "setting_information_nats": 0.6931471805599444,
+              "simplex_feasibility_residual": 0.0
+            },
+            {
+              "classical_entropy_drop_nats": 1.6653345369377348e-16,
+              "convex_optimality_gap_nats": 7.549516567451064e-15,
+              "maximum_CHSH": 2.8284271247461907,
+              "method": "convex_kl",
+              "nu_nats": 0.03207458648010231,
+              "pure_branch_entanglement_drop_nats": 3.3306690738754775e-16,
+              "setting_information_nats": 0.6931471805599443,
+              "simplex_feasibility_residual": 2.220446049250313e-16
+            },
+            {
+              "classical_entropy_drop_nats": -2.7755575615628914e-16,
+              "convex_optimality_gap_nats": 8.881784197001252e-15,
+              "maximum_CHSH": 2.8284271247461916,
+              "method": "convex_kl",
+              "nu_nats": 0.03207458648010242,
+              "pure_branch_entanglement_drop_nats": -3.3306690738754805e-16,
+              "setting_information_nats": 0.6931471805599443,
+              "simplex_feasibility_residual": 1.1102230246251565e-16
+            },
+            {
+              "classical_entropy_drop_nats": 1.1102230246251565e-16,
+              "convex_optimality_gap_nats": 7.549516567451064e-15,
+              "maximum_CHSH": 2.8284271247461907,
+              "method": "convex_kl",
+              "nu_nats": 0.03207458648010242,
+              "pure_branch_entanglement_drop_nats": 3.3306690738754785e-16,
+              "setting_information_nats": 0.6931471805599442,
+              "simplex_feasibility_residual": 0.0
+            },
+            {
+              "classical_entropy_drop_nats": -2.7755575615628914e-16,
+              "convex_optimality_gap_nats": 8.215650382226158e-15,
+              "maximum_CHSH": 2.8284271247461907,
+              "method": "convex_kl",
+              "nu_nats": 0.03207458648010264,
+              "pure_branch_entanglement_drop_nats": -3.3306690738754805e-16,
+              "setting_information_nats": 0.6931471805599442,
+              "simplex_feasibility_residual": 0.0
+            },
+            {
+              "classical_entropy_drop_nats": 1.6653345369377348e-16,
+              "convex_optimality_gap_nats": 7.327471962526033e-15,
+              "maximum_CHSH": 2.8284271247461903,
+              "method": "convex_kl",
+              "nu_nats": 0.03207458648010216,
+              "pure_branch_entanglement_drop_nats": 3.3306690738754795e-16,
+              "setting_information_nats": 0.6931471805599441,
+              "simplex_feasibility_residual": 0.0
+            },
+            {
+              "classical_entropy_drop_nats": -3.3306690738754696e-16,
+              "convex_optimality_gap_nats": 8.215650382226158e-15,
+              "maximum_CHSH": 2.8284271247461907,
+              "method": "convex_kl",
+              "nu_nats": 0.03207458648010227,
+              "pure_branch_entanglement_drop_nats": -3.3306690738754815e-16,
+              "setting_information_nats": 0.6931471805599441,
+              "simplex_feasibility_residual": 0.0
+            },
+            {
+              "classical_entropy_drop_nats": 2.220446049250313e-16,
+              "convex_optimality_gap_nats": 9.769962616701378e-15,
+              "maximum_CHSH": 2.8284271247461907,
+              "method": "convex_kl",
+              "nu_nats": 0.032074586480102266,
+              "pure_branch_entanglement_drop_nats": 3.3306690738754795e-16,
+              "setting_information_nats": 0.693147180559944,
+              "simplex_feasibility_residual": 2.220446049250313e-16
+            },
+            {
+              "classical_entropy_drop_nats": -3.3306690738754696e-16,
+              "convex_optimality_gap_nats": 1.0658141036401503e-14,
+              "maximum_CHSH": 2.8284271247461916,
+              "method": "convex_kl",
+              "nu_nats": 0.03207458648010234,
+              "pure_branch_entanglement_drop_nats": -3.3306690738754815e-16,
+              "setting_information_nats": 0.693147180559944,
+              "simplex_feasibility_residual": 0.0
+            },
+            {
+              "classical_entropy_drop_nats": 1.1102230246251565e-16,
+              "convex_optimality_gap_nats": 1.021405182655144e-14,
+              "maximum_CHSH": 2.828427124746191,
+              "method": "convex_kl",
+              "nu_nats": 0.032074586480102474,
+              "pure_branch_entanglement_drop_nats": 3.3306690738754805e-16,
+              "setting_information_nats": 0.693147180559944,
+              "simplex_feasibility_residual": 0.0
+            }
+          ],
+          "sum_nu_nats": 1.0263867673632727
+        },
+        "dependencies": {
+          "numpy": "2.3.5",
+          "scipy": "1.17.0"
+        },
+        "finite_sample_calibration": {
+          "alpha": 0.05,
+          "beta": 0.1,
+          "binary_KL_nats": 2.376205402245899,
+          "bounds": [
+            {
+              "K": 1,
+              "continuous_lower_bound": 3.428139749953723,
+              "integer_lower_bound": 4
+            },
+            {
+              "K": 2,
+              "continuous_lower_bound": 8.259831354782042,
+              "integer_lower_bound": 9
+            },
+            {
+              "K": 4,
+              "continuous_lower_bound": 36.81840489001518,
+              "integer_lower_bound": 37
+            },
+            {
+              "K": 8,
+              "continuous_lower_bound": 607.1197052549659,
+              "integer_lower_bound": 608
+            },
+            {
+              "K": 12,
+              "continuous_lower_bound": 9731.749176548154,
+              "integer_lower_bound": 9732
+            },
+            {
+              "K": 20,
+              "continuous_lower_bound": 2491630.767762506,
+              "integer_lower_bound": 2491631
+            }
+          ]
+        },
+        "masked_record_example": {
+          "decoded_CHSH": 2.82842712474619,
+          "first_marginal_nu_nats": 0.0,
+          "second_marginal_nu_nats": 0.0
+        },
+        "max_convex_optimality_gap_nats": 4.1798176064755665e-07,
+        "optimizer_gap_tolerance_nats": 5e-07,
+        "random_quantum_chains": [
+          {
+            "classical_budget_slack_nats": 0.2106105858484954,
+            "final_alice_conditional_entropy_nats": 0.47429712366049775,
+            "final_pure_branch_entanglement_nats": 0.13195248933510434,
+            "initial_alice_entropy_nats": 0.6849077095089932,
+            "initial_entanglement_nats": 0.6834118916021749,
+            "quantum_budget_slack_nats": 0.5514594022670705,
+            "setting_total_correlation_nats": 0.0,
+            "stages": [
+              {
+                "classical_entropy_drop_nats": 0.007953464216224004,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 6.106226635438361e-16,
+                "maximum_CHSH": 0.4504353370608839,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.21594441174877022,
+                "setting_information_nats": 0.0
+              },
+              {
+                "classical_entropy_drop_nats": 0.07763082943585864,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 3.608224830031759e-16,
+                "maximum_CHSH": 1.015194736817206,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.12408614624426223,
+                "setting_information_nats": 0.0
+              },
+              {
+                "classical_entropy_drop_nats": 0.12502629219641276,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 4.996003610813204e-16,
+                "maximum_CHSH": 1.52312173163825,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.21142884427403807,
+                "setting_information_nats": 0.0
+              }
+            ],
+            "sum_nu_nats": 0.0
+          },
+          {
+            "classical_budget_slack_nats": 0.5930547416215224,
+            "final_alice_conditional_entropy_nats": 0.42648121789559496,
+            "final_pure_branch_entanglement_nats": 0.1929434214287651,
+            "initial_alice_entropy_nats": 0.6340464454736019,
+            "initial_entanglement_nats": 0.6063154819416743,
+            "quantum_budget_slack_nats": 0.7988615745564247,
+            "setting_total_correlation_nats": 0.3854895140435155,
+            "stages": [
+              {
+                "classical_entropy_drop_nats": 0.15068073213521582,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 4.440892098500626e-16,
+                "maximum_CHSH": 1.8539107849414567,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.28582388469443276,
+                "setting_information_nats": 0.0
+              },
+              {
+                "classical_entropy_drop_nats": 0.009737406118822123,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 4.718447854656915e-16,
+                "maximum_CHSH": 0.5031216543884423,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.01668551554567732,
+                "setting_information_nats": 0.19274475702175775
+              },
+              {
+                "classical_entropy_drop_nats": 0.047147089323968994,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 1.942890293094024e-16,
+                "maximum_CHSH": 1.332500227763015,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.11086266027279909,
+                "setting_information_nats": 0.19274475702175775
+              }
+            ],
+            "sum_nu_nats": 0.0
+          },
+          {
+            "classical_budget_slack_nats": 0.2830413371025833,
+            "final_alice_conditional_entropy_nats": 0.3323863340466977,
+            "final_pure_branch_entanglement_nats": 0.259113935187459,
+            "initial_alice_entropy_nats": 0.6154276711492807,
+            "initial_entanglement_nats": 0.610644256202972,
+            "quantum_budget_slack_nats": 0.35153032101551335,
+            "setting_total_correlation_nats": 3.3306690738754696e-16,
+            "stages": [
+              {
+                "classical_entropy_drop_nats": 0.1982840692596387,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 3.5388358909926865e-16,
+                "maximum_CHSH": 1.847718791909129,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.24789863166933512,
+                "setting_information_nats": 0.0
+              },
+              {
+                "classical_entropy_drop_nats": 0.020635862167499075,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 1.1102230246251565e-16,
+                "maximum_CHSH": 0.7155803652184143,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.02625434339751087,
+                "setting_information_nats": 1.1102230246251565e-16
+              },
+              {
+                "classical_entropy_drop_nats": 0.06412140567544516,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 3.885780586188048e-16,
+                "maximum_CHSH": 1.3924321196158045,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.07737734594866702,
+                "setting_information_nats": 2.220446049250313e-16
+              }
+            ],
+            "sum_nu_nats": 0.0
+          },
+          {
+            "classical_budget_slack_nats": 0.4172226431480705,
+            "final_alice_conditional_entropy_nats": 0.36831532365148695,
+            "final_pure_branch_entanglement_nats": 0.06817440572983428,
+            "initial_alice_entropy_nats": 0.400048452756042,
+            "initial_entanglement_nats": 0.13932876406946934,
+            "quantum_budget_slack_nats": 0.45664387238315046,
+            "setting_total_correlation_nats": 0.3854895140435154,
+            "stages": [
+              {
+                "classical_entropy_drop_nats": 0.0013006833730859202,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 6.140921104957897e-16,
+                "maximum_CHSH": 0.40350180366387034,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.003343500645344527,
+                "setting_information_nats": 0.0
+              },
+              {
+                "classical_entropy_drop_nats": 0.024691043949118252,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 2.393918396847994e-16,
+                "maximum_CHSH": 1.3548566570749163,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.05114718685521363,
+                "setting_information_nats": 0.19274475702175775
+              },
+              {
+                "classical_entropy_drop_nats": 0.005741401782350886,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 2.0643209364124004e-16,
+                "maximum_CHSH": 0.7592881153592135,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.016663670839076897,
+                "setting_information_nats": 0.19274475702175764
+              }
+            ],
+            "sum_nu_nats": 0.0
+          },
+          {
+            "classical_budget_slack_nats": 0.055083841508866194,
+            "final_alice_conditional_entropy_nats": 0.4053134422395037,
+            "final_pure_branch_entanglement_nats": 0.12839493307964212,
+            "initial_alice_entropy_nats": 0.4603972837483699,
+            "initial_entanglement_nats": 0.26315220967841524,
+            "quantum_budget_slack_nats": 0.13475727659877312,
+            "setting_total_correlation_nats": 0.0,
+            "stages": [
+              {
+                "classical_entropy_drop_nats": 0.01465545224429221,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 2.220446049250313e-16,
+                "maximum_CHSH": 0.38059086467554926,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.029335029140536678,
+                "setting_information_nats": 0.0
+              },
+              {
+                "classical_entropy_drop_nats": 0.028116828480238443,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 7.355227538141662e-16,
+                "maximum_CHSH": 1.297993316726401,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.08482280701989378,
+                "setting_information_nats": 0.0
+              },
+              {
+                "classical_entropy_drop_nats": 0.01231156078433554,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 4.440892098500626e-16,
+                "maximum_CHSH": 0.6688304853642819,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.020599440438342664,
+                "setting_information_nats": 0.0
+              }
+            ],
+            "sum_nu_nats": 0.0
+          },
+          {
+            "classical_budget_slack_nats": 0.49476806984689803,
+            "final_alice_conditional_entropy_nats": 0.48249731149958897,
+            "final_pure_branch_entanglement_nats": 0.2034018871801326,
+            "initial_alice_entropy_nats": 0.5917758673029727,
+            "initial_entanglement_nats": 0.4461422683297115,
+            "quantum_budget_slack_nats": 0.6282298951930931,
+            "setting_total_correlation_nats": 0.3854895140435143,
+            "stages": [
+              {
+                "classical_entropy_drop_nats": 0.051798524642967525,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 1.2212453270876722e-15,
+                "maximum_CHSH": 1.24789260383162,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.1033255414263784,
+                "setting_information_nats": 0.0
+              },
+              {
+                "classical_entropy_drop_nats": 0.00618953596032723,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 3.3306690738754696e-16,
+                "maximum_CHSH": 0.47623018632095915,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.022147630514097516,
+                "setting_information_nats": 0.1927447570217572
+              },
+              {
+                "classical_entropy_drop_nats": 0.05129049520008899,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 5.828670879282072e-16,
+                "maximum_CHSH": 1.3865145527388287,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.11726720920910297,
+                "setting_information_nats": 0.19274475702175708
+              }
+            ],
+            "sum_nu_nats": 0.0
+          },
+          {
+            "classical_budget_slack_nats": 0.29205411153139377,
+            "final_alice_conditional_entropy_nats": 0.39432276180842324,
+            "final_pure_branch_entanglement_nats": 0.15896274959747908,
+            "initial_alice_entropy_nats": 0.6863768733398168,
+            "initial_entanglement_nats": 0.6772908338859085,
+            "quantum_budget_slack_nats": 0.5183280842884297,
+            "setting_total_correlation_nats": 2.220446049250313e-16,
+            "stages": [
+              {
+                "classical_entropy_drop_nats": 0.0668630864228198,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 2.7755575615628914e-16,
+                "maximum_CHSH": 1.157000176649743,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.14274194240051907,
+                "setting_information_nats": 0.0
+              },
+              {
+                "classical_entropy_drop_nats": 0.19544183484513328,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 3.885780586188048e-16,
+                "maximum_CHSH": 1.8480096094268943,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.3197638707909719,
+                "setting_information_nats": 2.220446049250313e-16
+              },
+              {
+                "classical_entropy_drop_nats": 0.029749190263440473,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 3.3306690738754696e-16,
+                "maximum_CHSH": 0.9663375960411132,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.055822271096938436,
+                "setting_information_nats": 0.0
+              }
+            ],
+            "sum_nu_nats": 0.0
+          },
+          {
+            "classical_budget_slack_nats": 0.47463629989947553,
+            "final_alice_conditional_entropy_nats": 0.2558881500797472,
+            "final_pure_branch_entanglement_nats": 0.030801683861741373,
+            "initial_alice_entropy_nats": 0.3450349359357083,
+            "initial_entanglement_nats": 0.2923219364020856,
+            "quantum_budget_slack_nats": 0.6470097665838587,
+            "setting_total_correlation_nats": 0.3854895140435145,
+            "stages": [
+              {
+                "classical_entropy_drop_nats": 0.04383115882660821,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 2.0816681711721685e-16,
+                "maximum_CHSH": 1.5240009766225673,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.15899689672636602,
+                "setting_information_nats": 0.0
+              },
+              {
+                "classical_entropy_drop_nats": 0.03793971435248944,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 5.551115123125783e-16,
+                "maximum_CHSH": 1.3405581175120336,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.07279279776902706,
+                "setting_information_nats": 0.19274475702175742
+              },
+              {
+                "classical_entropy_drop_nats": 0.007375912676863439,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 4.163336342344337e-16,
+                "maximum_CHSH": 0.9295909600301706,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.02973055804495114,
+                "setting_information_nats": 0.19274475702175708
+              }
+            ],
+            "sum_nu_nats": 0.0
+          },
+          {
+            "classical_budget_slack_nats": 0.11348936078168659,
+            "final_alice_conditional_entropy_nats": 0.5689998286422073,
+            "final_pure_branch_entanglement_nats": 0.3471639505465184,
+            "initial_alice_entropy_nats": 0.6824891894238939,
+            "initial_entanglement_nats": 0.6723390081691061,
+            "quantum_budget_slack_nats": 0.3251750576225877,
+            "setting_total_correlation_nats": 0.0,
+            "stages": [
+              {
+                "classical_entropy_drop_nats": 0.0554213332266732,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 2.7755575615628914e-16,
+                "maximum_CHSH": 1.0468454877684774,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.17413826709943692,
+                "setting_information_nats": 0.0
+              },
+              {
+                "classical_entropy_drop_nats": 0.029190826942511516,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 4.163336342344337e-16,
+                "maximum_CHSH": 0.6257491782786152,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.058288489970156065,
+                "setting_information_nats": 0.0
+              },
+              {
+                "classical_entropy_drop_nats": 0.028877200612501874,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 3.3306690738754696e-16,
+                "maximum_CHSH": 0.8376555105775014,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.09274830055299471,
+                "setting_information_nats": 0.0
+              }
+            ],
+            "sum_nu_nats": 0.0
+          },
+          {
+            "classical_budget_slack_nats": 0.529189188768168,
+            "final_alice_conditional_entropy_nats": 0.5494344493505009,
+            "final_pure_branch_entanglement_nats": 0.381596062335302,
+            "initial_alice_entropy_nats": 0.6931341240751536,
+            "initial_entanglement_nats": 0.693123687897139,
+            "quantum_budget_slack_nats": 0.6970171396053522,
+            "setting_total_correlation_nats": 0.38548951404351517,
+            "stages": [
+              {
+                "classical_entropy_drop_nats": 0.1046432576134092,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 1.6653345369377348e-16,
+                "maximum_CHSH": 1.2994726222138466,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.2423660460428353,
+                "setting_information_nats": 0.0
+              },
+              {
+                "classical_entropy_drop_nats": 0.029629699083011607,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 6.38378239159465e-16,
+                "maximum_CHSH": 0.7877712714517872,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.05118232177282028,
+                "setting_information_nats": 0.19274475702175742
+              },
+              {
+                "classical_entropy_drop_nats": 0.009426718028231917,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 8.326672684688674e-16,
+                "maximum_CHSH": 0.4470327266378877,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.017979257746181365,
+                "setting_information_nats": 0.19274475702175775
+              }
+            ],
+            "sum_nu_nats": 0.0
+          },
+          {
+            "classical_budget_slack_nats": 0.10859273261503793,
+            "final_alice_conditional_entropy_nats": 0.33902813078858135,
+            "final_pure_branch_entanglement_nats": 0.13773253156327234,
+            "initial_alice_entropy_nats": 0.44762086340361873,
+            "initial_entanglement_nats": 0.3957215276134908,
+            "quantum_budget_slack_nats": 0.25798899605021897,
+            "setting_total_correlation_nats": 5.551115123125783e-16,
+            "stages": [
+              {
+                "classical_entropy_drop_nats": 0.005153501932193438,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 3.608224830031759e-16,
+                "maximum_CHSH": 0.34998565976802065,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.023021191153291487,
+                "setting_information_nats": 0.0
+              },
+              {
+                "classical_entropy_drop_nats": 0.07935607575373232,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 3.608224830031759e-16,
+                "maximum_CHSH": 1.7827163743181345,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.18519596184913692,
+                "setting_information_nats": 3.3306690738754696e-16
+              },
+              {
+                "classical_entropy_drop_nats": 0.024083154929111616,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 7.216449660063518e-16,
+                "maximum_CHSH": 1.1257697890441956,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.04977184304779003,
+                "setting_information_nats": 2.220446049250313e-16
+              }
+            ],
+            "sum_nu_nats": 0.0
+          },
+          {
+            "classical_budget_slack_nats": 0.46286793456297437,
+            "final_alice_conditional_entropy_nats": 0.13559122333622517,
+            "final_pure_branch_entanglement_nats": 0.05857659451506542,
+            "initial_alice_entropy_nats": 0.2129696438556847,
+            "initial_entanglement_nats": 0.2012980859004624,
+            "quantum_budget_slack_nats": 0.5282110054289118,
+            "setting_total_correlation_nats": 0.38548951404351484,
+            "stages": [
+              {
+                "classical_entropy_drop_nats": 0.01848272538139728,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 6.661338147750939e-16,
+                "maximum_CHSH": 1.161538669412626,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.054352927335798246,
+                "setting_information_nats": 0.0
+              },
+              {
+                "classical_entropy_drop_nats": 0.05386263569872907,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 7.771561172376096e-16,
+                "maximum_CHSH": 1.6484754946212923,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.0767699700956919,
+                "setting_information_nats": 0.1927447570217572
+              },
+              {
+                "classical_entropy_drop_nats": 0.005033059439333187,
+                "convex_optimality_gap_nats": 0.0,
+                "locality_feasibility_residual": 7.945033519973776e-16,
+                "maximum_CHSH": 1.041794578405434,
+                "method": "local_feasibility",
+                "nu_nats": 0.0,
+                "pure_branch_entanglement_drop_nats": 0.011598593953906819,
+                "setting_information_nats": 0.19274475702175764
+              }
+            ],
+            "sum_nu_nats": 0.0
+          }
+        ],
+        "scope": "Finite numerical checks; analytical proofs are in science/.",
+        "seed": 20261030,
+        "status": "pass",
+        "two_bob_quantum_example": {
+          "classical_budget_slack_nats": 0.30028321077277315,
+          "final_alice_conditional_entropy_nats": 0.38692932843779515,
+          "final_pure_branch_entanglement_nats": 1.0591881640676545e-15,
+          "initial_alice_entropy_nats": 0.6931471805599453,
+          "initial_entanglement_nats": 0.6931471805599453,
+          "quantum_budget_slack_nats": 0.6872125392105671,
+          "setting_total_correlation_nats": 0.0,
+          "stages": [
+            {
+              "classical_entropy_drop_nats": 0.16986076413363527,
+              "convex_optimality_gap_nats": 1.7763568394002505e-15,
+              "maximum_CHSH": 2.2627416997969534,
+              "method": "convex_kl",
+              "nu_nats": 0.0029673206746888892,
+              "pure_branch_entanglement_drop_nats": 0.36806420716849714,
+              "setting_information_nats": 0.0,
+              "simplex_feasibility_residual": 0.0
+            },
+            {
+              "classical_entropy_drop_nats": 0.13635708798851487,
+              "convex_optimality_gap_nats": 2.220446049250313e-15,
+              "maximum_CHSH": 2.2627416997969507,
+              "method": "convex_kl",
+              "nu_nats": 0.002967320674688116,
+              "pure_branch_entanglement_drop_nats": 0.3250829733914471,
+              "setting_information_nats": 0.0,
+              "simplex_feasibility_residual": 0.0
+            }
+          ],
+          "sum_nu_nats": 0.005934641349377006
+        },
+        "units": "nats"
+      },
+      "returncode": 0,
+      "stderr": ""
+    }
+  ],
+  "python": "3.12.14",
+  "status": "pass"
+}

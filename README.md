@@ -99,6 +99,10 @@ The scientific account is organized by question; each proof has one authoritativ
 
 For a short route, read the model, causal bound, attainment and quantum-rate pages in that order. The statistical page and general evidence budget then explain distinct operational consequences. [llms.txt](llms.txt) maps common questions to these sources.
 
+## Learning route
+
+The [learning entrypoint](learning/README.md) connects Valerio Scarani's _Bell Nonlocality_ (2019), the single educational anchor, to this project's experiment and proofs. The [source bridge](learning/scarani-bridge.md) selects relevant sections, translates conventions, and develops a complete two-observer example. The [30-milestone map](learning/milestones.md) contains ten background milestones followed by twenty narrative milestones, with dependencies and canonical scientific sources. It is a shared understanding map, not a personal assessment record.
+
 ## Reproduction
 
 The reference environment is Python 3.12 with pinned NumPy and SciPy versions. In an existing suitable environment, run:

@@ -7,6 +7,7 @@
 - [Overview](README.md): question, principal results, resource boundaries and reading routes.
 - [Model](science/model.md): the joint time-ordered nonsignalling law, independent uniform Bob settings, ordinary marginals and common notation.
 - [Related work](references/related-work.md): attribution and comparisons to the closest primary results.
+- [Learning entrypoint](learning/README.md): the sole Scarani anchor, source bridge and common understanding map.
 
 ## Questions and authoritative files
 
@@ -17,10 +18,14 @@
 - What if alphabets are larger or settings are correlated? [general-evidence-budget.md](science/general-evidence-budget.md) proves Shannon and entanglement-of-formation budgets with residual terms and an external-input total-correlation correction.
 - What does noise mean, and which assumptions can fail? [noise-and-boundaries.md](science/noise-and-boundaries.md) gives the exact uniform-contamination threshold and counterexamples outside the model or data restriction.
 - How were finite cases checked? [verification/README.md](verification/README.md) documents the code, fixtures, tolerances and interpretation of results.
+- How does the educational source lead into this project? [Scarani bridge](learning/scarani-bridge.md) maps selected sections, translates notation and works through two observers.
+- What are the shared understanding targets? [M01–M30](learning/milestones.md) supplies exactly thirty milestones, their dependencies and source pointers; it is not a learner progress record.
 
 ## Reading routes
 
 Scientific story: README -> model -> causal-bound -> attainment -> quantum-rate -> statistical-evidence -> noise-and-boundaries.
+
+Study route: learning/README.md -> learning/scarani-bridge.md -> learning/milestones.md. M01–M10 assemble the background; M11–M30 build the causal argument, constructions and operational meaning. Scarani supplies foundations; the linked scientific pages supply the sequential results and their primary attribution.
 
 Proof route: model's conditioning identities -> causal-bound's one-step inequality -> weighted and subsequence theorems -> attainment's positive-sector converse -> quantum-rate's instrument and allocation -> asymptotic comparison.
 

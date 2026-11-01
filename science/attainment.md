@@ -47,7 +47,7 @@ The source uses a CHSH winning-probability convention with local bound $3/4$. Th
 For the PR specialization of their Hardy parameters, $\gamma=1/2$ and $\beta=0$. If $q_i$ is the probability that the incoming resource is still unmeasured, their equations reduce to
 ```math
 q_1=1,\qquad
-q_{i+1}=\frac{q_i(1-p_i)}2,
+q_{i+1}=\frac{q_i(1-p_i)}{2},
 \qquad
 C_i-2=2q_i p_i.
 ```
@@ -57,16 +57,16 @@ Given any target vector $\boldsymbol\delta$ in the right-hand side of Theorem 2,
 ```math
 p_i=\frac{\delta_i}{2q_i}
 ```
-whenever $q_i>0$. The recursion implies
+whenever $q_i\gt 0$. The recursion implies
 ```math
 q_i
 =
 2^{1-i}
 \left(
-1-\frac12\sum_{j<i}2^{j-1}\delta_j
+1-\frac{1}{2}\sum_{j=1}^{i-1}2^{j-1}\delta_j
 \right).
 ```
-The nonnegative weighted-prefix sums are at most the full sum, so every $q_i$ is nonnegative. Whenever $q_i>0$, the condition $p_i\le1$ is exactly
+The nonnegative weighted-prefix sums are at most the full sum, so every $q_i$ is nonnegative. Whenever $q_i\gt 0$, the condition $p_i\le1$ is exactly
 ```math
 \sum_{j\le i}2^{j-1}\delta_j\le2.
 ```
@@ -128,7 +128,7 @@ which is independent of $x$. For a prefix ending before $j$, summing the later B
 P^{(j)}(a,b_1,\ldots,b_r\mid x,\mathbf y)
 =
 2^{-(r+1)},
-\qquad r<j.
+\qquad r\lt j.
 ```
 This is independent of every later input. For $r\ge j$, the prefix is
 ```math
@@ -144,9 +144,9 @@ For the canonical orientation, the values are
 ```math
 C_i(P^{(j)})=
 \begin{cases}
-0,&i<j,\\
+0,&i\lt j,\\
 4,&i=j,\\
-2,&i>j.
+2,&i\gt j.
 \end{cases}
 ```
 Before $j$, Alice and Bob $i$ are independent. At $j$, the PR relation gives $E^{xy}=(-1)^{xy}$. After $j$, averaging the independent uniform $Y_j$ gives
@@ -162,7 +162,7 @@ Let $D$ be the deterministic local kernel with $a=b_1=\cdots=b_K=0$. It has cano
 
 For a target vector in Theorem 2, define weights backwards:
 ```math
-w_i=\frac{\delta_i}{2}+\sum_{j>i}w_j,
+w_i=\frac{\delta_i}{2}+\sum_{j=i+1}^{K}w_j,
 \qquad
 \ell=1-\sum_{i=1}^K w_i.
 ```
@@ -170,7 +170,7 @@ They obey
 ```math
 \sum_{i=1}^K w_i
 =
-\frac12\sum_{i=1}^K2^{i-1}\delta_i
+\frac{1}{2}\sum_{i=1}^K2^{i-1}\delta_i
 \le1,
 ```
 so all weights, including $\ell$, are nonnegative. The mixture
@@ -181,11 +181,11 @@ is time-ordered nonsignalling and has
 ```math
 C_i
 =
-2\ell+4w_i+2\sum_{j<i}w_j,
+2\ell+4w_i+2\sum_{j=1}^{i-1}w_j,
 \qquad
 C_i-2
 =
-2w_i-2\sum_{j>i}w_j
+2w_i-2\sum_{j=i+1}^{K}w_j
 =
 \delta_i.
 ```

@@ -57,14 +57,14 @@ Let $\delta_K^{\mathrm Q}$ denote the supremum of the common gap over quantum re
 The lower expression is asymptotic to $64/(e^2K^2 2^K)$. Thus
 
 ```math
-\boxed{\lim_{K\to\infty}(\delta_K^{\mathrm Q})^{1/K}=\frac12.}
+\boxed{\lim_{K\to\infty}(\delta_K^{\mathrm Q})^{1/K}=\frac{1}{2}.}
 ```
 
 The state, Alice's projectors and Bob's controls may depend on the chosen finite depth. The carrier dimension is six, while the smallest control probability is exponentially small. This proves an optimal exponential rate under the stated resources, without determining the finite-depth quantum optimum or a fixed-state optimum. [The complete instrument and allocation proof](science/quantum-rate.md) identifies every inherited ingredient.
 
 ### Evidence and noise have explicit operational meanings
 
-Suppose $n$ independent source repetitions are used, and each link is certified using only its own records $(X,A,Y_i,B_i)$. If each test has type-I error at most $\alpha$ against every iid local alternative and power at least $1-\beta$, where $0<\alpha<1-\beta<1$, then
+Suppose $n$ independent source repetitions are used, and each link is certified using only its own records $(X,A,Y_i,B_i)$. If each test has type-I error at most $\alpha$ against every iid local alternative and power at least $1-\beta$, where $0\lt \alpha\lt 1-\beta\lt 1$, then
 
 ```math
 n\ge
@@ -76,7 +76,7 @@ Here $d$ is binary relative entropy in nats. The same source rows can be reused 
 For a separate noise model, replace Alice's output by an independent fair bit with probability $p$, retaining the input and all Bob records. Every pair remains CHSH nonlocal only if
 
 ```math
-p<2^{-K}.
+p\lt 2^{-K}.
 ```
 
 This threshold is exact over the nonsignalling model. Quantum protocols attain its exponential rate up to a polynomial factor. Other source or instrument noise requires its own analysis.

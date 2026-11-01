@@ -22,7 +22,7 @@ This is a mixture of two valid time-ordered nonsignalling behaviors. Each pairwi
 
 $$
 P_i^{(p)}=(1-p)P_i+pU,
-\qquad U(a,b\mid x,y)=\tfrac14.
+\qquad U(a,b\mid x,y)=\tfrac{1}{4}.
 $$
 
 Every correlator, and hence every signed CHSH orientation, is multiplied by $1-p$. If $S_i$ is the largest CHSH orientation of $P_i$, then
@@ -35,7 +35,7 @@ $$
 Write $\delta_{\min}=\min_i(S_i-2)$. If every original marginal is nonlocal, all remain nonlocal under (1) exactly when
 
 $$
-p< p_*(P):=\frac{\delta_{\min}}{2+\delta_{\min}}.
+p\lt  p_*(P):=\frac{\delta_{\min}}{2+\delta_{\min}}.
 \tag{3}
 $$
 
@@ -75,7 +75,7 @@ The same CHSH consequence has a local operational implementation that retains ev
 $$
 \widehat P^{(p)}(a,\mathbf b\mid x,\mathbf y)
 =(1-p)P(a,\mathbf b\mid x,\mathbf y)
-+\frac p2P_{\mathsf B}(\mathbf b\mid\mathbf y).
++\frac{p}{2}P_{\mathsf B}(\mathbf b\mid\mathbf y).
 \tag{5}
 $$
 
@@ -84,7 +84,7 @@ Collective nonsignalling makes $P_{\mathsf B}$ independent of $x$. Its prefix ma
 Equivalently, flip Alice's bit independently with probability $\eta\in[0,1/2]$. For binary $A$, this channel is exactly (5) with $p=2\eta$. Keeping all $K$ marginals nonlocal therefore requires
 
 $$
-\eta<\frac{\delta_{\min}}{2(2+\delta_{\min})}
+\eta\lt \frac{\delta_{\min}}{2(2+\delta_{\min})}
 \le2^{-(K+1)}.
 \tag{6}
 $$
@@ -151,7 +151,7 @@ $$
 P(a,b_1,\ldots,b_K\mid x,y_1,\ldots,y_K)
 =
 \begin{cases}
-\tfrac12,&b_i=a\oplus xy_i\text{ for every }i,\\
+\tfrac{1}{2},&b_i=a\oplus xy_i\text{ for every }i,\\
 0,&\text{otherwise}.
 \end{cases}
 \tag{7}

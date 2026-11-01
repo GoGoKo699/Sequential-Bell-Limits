@@ -16,7 +16,7 @@ The target depth $K$ is fixed before the trial. The state, Alice's measurement p
 
 ## State, projectors and CHSH convention
 
-Let $a>0$ be a real shape parameter. Outcome labels below are $s,t\in\{+1,-1\}$, so the symbol $a$ is not an outcome. Rewriting the source's Eqs. (9)–(10) using $a=\tfrac12\cot^2\theta$ gives
+Let $a\gt 0$ be a real shape parameter. Outcome labels below are $s,t\in\{+1,-1\}$, so the symbol $a$ is not an outcome. Rewriting the source's Eqs. (9)–(10) using $a=\tfrac{1}{2}\cot^2\theta$ gives
 
 $$
 |\psi_a\rangle=
@@ -162,7 +162,7 @@ Equations (Q10)–(Q12) follow from the physical instrument, including the distu
 
 ## Exact equal-margin allocation
 
-**Proposition.** For every integer $K\ge1$ and every $a>0$, the probabilities
+**Proposition.** For every integer $K\ge1$ and every $a\gt 0$, the probabilities
 
 $$
 p_i=\frac{1+a}{(2+a)^{K-i+1}-1},
@@ -184,7 +184,7 @@ This is the largest common excess within the specified one-sided fixed-Hardy pro
 **Proof.** Put $b=2+a$, $r=b/2$ and $c=\delta/(4\gamma)$. Requiring $X_i-aZ_i=c$ in (Q12) gives
 
 $$
-Z_i=\frac ca(r^{i-1}-1),
+Z_i=\frac{c}{a}(r^{i-1}-1),
 \qquad X_i=cr^{i-1},
 \qquad
 q_i=2^{1-i}\left(1-c\sum_{j=0}^{i-2}b^j\right),
@@ -199,7 +199,7 @@ c=\frac{1}{\sum_{j=0}^{K-1}b^j}
 \tag{Q16}
 $$
 
-Substituting into $p_i=X_i/q_i$ gives (Q13). Its denominator is at least $1+a$, so $0<p_i\le1$, with $p_K=1$. Equation (Q11) gives a strictly positive Hardy excess, hence $C_i^{\mathrm H}=S_i$, proving (Q14).
+Substituting into $p_i=X_i/q_i$ gives (Q13). Its denominator is at least $1+a$, so $0\lt p_i\le1$, with $p_K=1$. Equation (Q11) gives a strictly positive Hardy excess, hence $C_i^{\mathrm H}=S_i$, proving (Q14).
 
 To prove optimality within this protocol, suppose every excess is at least $4\gamma c$. Then $X_i\ge c+aZ_i$. Induction in (Q12) gives $X_i\ge cr^{i-1}$. Also, the nonnegative terminal probability $q_{K+1}$ implies
 
@@ -237,13 +237,13 @@ $$
 because $(2+4/K)^K=2^K(1+2/K)^K\sim e^2 2^K$. Taking $K$th roots in (Q18) proves
 
 $$
-\boxed{\lim_{K\to\infty}(\delta_K^{\mathrm Q})^{1/K}=\frac12.}
+\boxed{\lim_{K\to\infty}(\delta_K^{\mathrm Q})^{1/K}=\frac{1}{2}.}
 \tag{Q20}
 $$
 
 The same bounds also give $-\log_2\delta_K^{\mathrm Q}=K+O(\log K)$. The exact quantum margin can still differ from the no-signalling value by a polynomial factor; (Q20) does not determine that factor.
 
-This is a family of finite-depth experiments. Specifically, $\cot^2\theta_K=8/K$, and the state approaches a product state as $K$ grows. Alice's projectors change with that state. For a fixed $a>0$ independent of $K$, (Q14) instead has exponential base $2+a$. The calculation does not establish the optimum with any prescribed fixed initial state.
+This is a family of finite-depth experiments. Specifically, $\cot^2\theta_K=8/K$, and the state approaches a product state as $K$ grows. Alice's projectors change with that state. For a fixed $a\gt 0$ independent of $K$, (Q14) instead has exponential base $2+a$. The calculation does not establish the optimum with any prescribed fixed initial state.
 
 ## Source count, control precision and statistical scope
 

@@ -167,7 +167,7 @@ Define the total correlation of the input vector by
 $$
 \operatorname{TC}(Y_1,\ldots,Y_K)
 =\sum_{i=1}^K H(Y_i)-H(Y_1,\ldots,Y_K)
-=\sum_{i=1}^K I(Y_{<i}:Y_i).
+=\sum_{i=1}^K I(Y_{\lt i}:Y_i).
 \tag{9}
 $$
 
@@ -186,8 +186,8 @@ $$
 **Proof.** Write $H=H_{i-1}$. Joint prefix causality and the external input law imply
 
 $$
-P(y_i\mid x,a,h)=\mu(y_i\mid y_{<i}),\qquad
-P(y_i\mid h)=\mu(y_i\mid y_{<i}).
+P(y_i\mid x,a,h)=\mu(y_i\mid y_{\lt i}),\qquad
+P(y_i\mid h)=\mu(y_i\mid y_{\lt i}).
 \tag{11}
 $$
 
@@ -195,7 +195,7 @@ In particular,
 
 $$
 I(A:Y_i\mid X,H)=0,\qquad
-I(H:Y_i)=I(Y_{<i}:Y_i).
+I(H:Y_i)=I(Y_{\lt i}:Y_i).
 \tag{12}
 $$
 
@@ -215,7 +215,7 @@ $$
 D(\widetilde p_i\|\widetilde q_i)
 &=I(H:Y_i)
 +I(A:B_i\mid X,Y_i,H)\\
-&=I(Y_{<i}:Y_i)
+&=I(Y_{\lt i}:Y_i)
 +I(A:B_i\mid X,Y_i,H).
 \end{aligned}
 \tag{14}
@@ -227,7 +227,7 @@ Data processing, summation, (9), and the same chain rule as in Theorem 1 prove (
 
 ### Conditional evidence with correlated inputs
 
-For this design, replace $\mu_i(y)$ in (7) by the actual conditional law $\mu(y\mid y_{<i})$ and retain the average over $p(h)$. Call the resulting quantity $\bar\nu_i^{\mathrm{cond}}$. The product comparator still shows
+For this design, replace $\mu_i(y)$ in (7) by the actual conditional law $\mu(y\mid y_{\lt i})$ and retain the average over $p(h)$. Call the resulting quantity $\bar\nu_i^{\mathrm{cond}}$. The product comparator still shows
 
 $$
 \sum_i\bar\nu_i^{\mathrm{cond}}+H(A\mid X,H_K)
@@ -238,7 +238,7 @@ $$
 However, forgetting the history no longer preserves the input distribution inside each branch. The correct comparison is
 
 $$
-\nu_i\le I(Y_{<i}:Y_i)+\bar\nu_i^{\mathrm{cond}},
+\nu_i\le I(Y_{\lt i}:Y_i)+\bar\nu_i^{\mathrm{cond}},
 \tag{16}
 $$
 
@@ -295,7 +295,7 @@ For independent settings the total-correlation term is zero.
 
 ## 6. Proof of the quantum budget
 
-Fix $\varepsilon>0$ and an initial pure-state ensemble whose average entanglement is at most $E_F(\rho_0)+\varepsilon$. Introduce its label $\Lambda$ for the proof. Refine each Bob instrument into individual Kraus operators
+Fix $\varepsilon\gt 0$ and an initial pure-state ensemble whose average entanglement is at most $E_F(\rho_0)+\varepsilon$. Introduce its label $\Lambda$ for the proof. Refine each Bob instrument into individual Kraus operators
 
 $$
 \mathcal I^{\,h}_{i,b\mid y}(\sigma)
@@ -345,13 +345,13 @@ The causal external-input model continues to hold after this refinement:
 
 $$
 P(y_i\mid T_{i-1}=t)
-=\mu(y_i\mid y_{<i}),
+=\mu(y_i\mid y_{\lt i}),
 $$
 
 because the initial ensemble label is independent of the entire input vector, and the Kraus records are generated only from past revealed inputs. Thus
 
 $$
-I(T_{i-1}:Y_i)=I(Y_{<i}:Y_i).
+I(T_{i-1}:Y_i)=I(Y_{\lt i}:Y_i).
 \tag{22}
 $$
 

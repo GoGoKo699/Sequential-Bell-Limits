@@ -59,9 +59,9 @@ At a past history h, consider Alice's mean output separately for her two possibl
 ```math
 m_x(h)=\mathbb E[A\mid X=x,H=h],
 \qquad
-u(h)=\frac{m_0(h)+m_1(h)}2,
+u(h)=\frac{m_0(h)+m_1(h)}{2},
 \qquad
-v(h)=\frac{m_0(h)-m_1(h)}2.
+v(h)=\frac{m_0(h)-m_1(h)}{2}.
 ```
 
 These are means from different conditional experiments. They do not assign simultaneous values to incompatible Alice outcomes. In this display, u is a coordinate of the conditional-mean vector; the Greek letter nu used for KL evidence is a different symbol.
@@ -110,15 +110,15 @@ For a physical comparison, the [quantum construction](../science/quantum-rate.md
 ```math
 |\psi_2\rangle=
 \frac{|00\rangle+\sqrt2|01\rangle+\sqrt2|10\rangle}{\sqrt5},
-\qquad p_1=\frac15,
+\qquad p_1=\frac{1}{5},
 \qquad p_2=1.
 ```
 
 Alice uses the projectors given in that page. Each Bob follows its trit-controlled instrument, rather than just measuring an unchanged state. With Hardy parameters and initial flag probabilities,
 
 ```math
-\gamma=\frac4{45},\quad a=2,\quad
-(q_1,Z_1)=(1,0),\quad(q_2,Z_2)=\left(\frac25,\frac1{10}\right).
+\gamma=\frac{4}{45},\quad a=2,\quad
+(q_1,Z_1)=(1,0),\quad(q_2,Z_2)=\left(\frac{2}{5},\frac{1}{10}\right).
 ```
 
 Both excesses are consequently
@@ -145,7 +145,7 @@ The schedule is optimized within that specified one-sided protocol. Choosing the
 ```math
 \delta_K(4/K)\sim\frac{64}{e^2K^2 2^K},
 \qquad
-\delta_K(4/K)\le\delta_K^{\mathrm Q}\le\frac2{2^K-1}.
+\delta_K(4/K)\le\delta_K^{\mathrm Q}\le\frac{2}{2^K-1}.
 ```
 
 The two bounds have the same Kth-root limit, one half. They do not have the same polynomial prefactor. A fixed-state optimum and the exact finite-depth quantum optimum are separate questions. Constant carrier dimension also does not imply depth-independent control precision: the earliest control probabilities become exponentially small.

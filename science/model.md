@@ -15,7 +15,7 @@ P(a,\mathbf b\mid x,\mathbf y).
 The actual input distribution is
 ```math
 \Pr[X=x,\mathbf Y=\mathbf y]=\pi(x)\,2^{-K},
-\qquad \pi(0),\pi(1)>0.
+\qquad \pi(0),\pi(1)\gt 0.
 ```
 The source and the devices are independent of these external setting choices. Bob $i$ receives $Y_i$ only at his stage. In particular, the devices have no advance access to later settings. Alice's measurement rule is fixed before the experiment and does not depend on any Bob history. Uniform $\pi$ is the usual CHSH design, but the causal bound only requires both Alice inputs to be defined.
 
@@ -109,7 +109,7 @@ S_i=\max_{c\in\mathcal C}C_i(c),
 \qquad
 \delta_i=S_i-2.
 ```
-Thus $0\le S_i\le4$, and $\delta_i$ is a **signed** gap. A local table can have $S_i<2$. For a valid binary-input, binary-output nonsignalling table, Bell locality is equivalent to $S_i\le2$; this is the relevant form of [Fine1982](../references/related-work.md#fine1982).
+Thus $0\le S_i\le4$, and $\delta_i$ is a **signed** gap. A local table can have $S_i\lt 2$. For a valid binary-input, binary-output nonsignalling table, Bell locality is equivalent to $S_i\le2$; this is the relevant form of [Fine1982](../references/related-work.md#fine1982).
 
 The canonical orientation used in the proofs is
 ```math
@@ -155,7 +155,7 @@ m_x(h)
 ```
 The updated history weights are
 ```math
-p_i(h,y,b)=\frac12\,p_{i-1}(h)\,r_i(b\mid y,h).
+p_i(h,y,b)=\frac{1}{2}\,p_{i-1}(h)\,r_i(b\mid y,h).
 ```
 Finally, the same past-history distribution averages each conditional pair table:
 ```math

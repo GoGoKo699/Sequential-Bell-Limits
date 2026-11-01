@@ -165,7 +165,7 @@ The same argument applies to the averaged conditional-history quantities. The co
 Define the total correlation of the input vector by
 
 $$
-\operatorname{TC}(Y_1,\ldots,Y_K)
+\mathrm{TC}(Y_1,\ldots,Y_K)
 =\sum_{i=1}^K H(Y_i)-H(Y_1,\ldots,Y_K)
 =\sum_{i=1}^K I(Y_{\lt i}:Y_i).
 \tag{9}
@@ -178,7 +178,7 @@ The initial source remains independent of the entire input vector. Correlations 
 $$
 \boxed{
 \sum_i\nu_i+H(A\mid X,H_K)
-\le H(A\mid X)+\operatorname{TC}(Y_1,\ldots,Y_K).
+\le H(A\mid X)+\mathrm{TC}(Y_1,\ldots,Y_K).
 }
 \tag{10}
 $$
@@ -246,7 +246,7 @@ obtained by using the optimized local $Q_h$ in (13). This explains why the total
 
 ### Boundary example
 
-Take one Bell pair and one external uniform bit $S$, with $Y_i=S$ for every $i$. Bob 1 measures the chosen sharp CHSH observable; every later Bob repeats the same observable. The outputs repeat, and every Alice--Bob marginal is the same maximally violating quantum CHSH behavior. Thus $\sum_i\nu_i=K\nu_{\mathrm{CHSH}}$, while $\operatorname{TC}(Y)=(K-1)\ln2$.
+Take one Bell pair and one external uniform bit $S$, with $Y_i=S$ for every $i$. Bob 1 measures the chosen sharp CHSH observable; every later Bob repeats the same observable. The outputs repeat, and every Alice--Bob marginal is the same maximally violating quantum CHSH behavior. Thus $\sum_i\nu_i=K\nu_{\mathrm{CHSH}}$, while $\mathrm{TC}(Y)=(K-1)\ln2$.
 
 After the first setting is revealed, later settings are deterministic conditional on the history, so their conditional evidence in (15) vanishes. The example shows necessity of an input-correlation correction. It does not prove optimality of the coefficient in (10).
 
@@ -274,7 +274,7 @@ $$
 E_F(\rho_{\mathsf A\mathsf B})
 =\inf_{\rho=\sum_\lambda p_\lambda|\psi_\lambda\rangle\langle\psi_\lambda|}
 \sum_\lambda p_\lambda
-S(\operatorname{Tr}_{\mathsf B}|\psi_\lambda\rangle\langle\psi_\lambda|).
+S(\mathrm{Tr}_{\mathsf B}\,|\psi_\lambda\rangle\langle\psi_\lambda|).
 \tag{17}
 $$
 
@@ -286,7 +286,7 @@ $$
 \boxed{
 \sum_i\nu_i
 +\sum_h p(h)E_F(\rho^{\mathrm{res}}_{\mathsf A\mathsf B_K\mid h})
-\le E_F(\rho_0)+\operatorname{TC}(Y_1,\ldots,Y_K).
+\le E_F(\rho_0)+\mathrm{TC}(Y_1,\ldots,Y_K).
 }
 \tag{18}
 $$
@@ -365,7 +365,7 @@ then
 
 $$
 \sum_i\nu_i+\mathcal E_K
-\le E_F(\rho_0)+\varepsilon+\operatorname{TC}(Y).
+\le E_F(\rho_0)+\varepsilon+\mathrm{TC}(Y).
 \tag{23}
 $$
 

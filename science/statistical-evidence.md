@@ -212,12 +212,12 @@ $$
 n\ge\frac{\sum_i c_i}{H(A\mid X)}
 $$
 
-when the denominator is positive. For externally correlated Bob inputs revealed only causally, replace the denominator by $H(A\mid X)+\operatorname{TC}(Y_1,\ldots,Y_K)$. The quantum companion supplies the alternative budget
+when the denominator is positive. For externally correlated Bob inputs revealed only causally, replace the denominator by $H(A\mid X)+\mathrm{TC}(Y_1,\ldots,Y_K)$. The quantum companion supplies the alternative budget
 
 $$
 E_F(\rho_{\mathsf A\mathsf B})
 -\mathbb E_h E_F(\rho^{\mathrm{res}}_{\mathsf A\mathsf B\mid h})
-+\operatorname{TC}(Y_1,\ldots,Y_K).
++\mathrm{TC}(Y_1,\ldots,Y_K).
 $$
 
 The exact assumptions and the meaning of the residual state are given in [general-evidence-budget.md](general-evidence-budget.md). A zero budget rules out the nontrivial testing requirements (2).

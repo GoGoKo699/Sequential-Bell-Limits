@@ -58,9 +58,9 @@ The behavior is
 ```math
 P(a,\mathbf b\mid x,\mathbf y)
 =
-\operatorname{tr}\!\left[
+\mathrm{tr}\!\left[
 (M_{a\mid x}\otimes I)
-\left(\operatorname{id}_A\otimes
+\left(\mathrm{id}_A\otimes
 \mathcal J_{\mathbf b\mid\mathbf y}\right)(\rho_{AB})
 \right].
 ```

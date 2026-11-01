@@ -90,7 +90,7 @@ Let $\mathcal I^{(i)}_{t|y}$ denote the resulting outcome map. The full behavior
 
 $$
 P(s,t_1,\ldots,t_K|x,y_1,\ldots,y_K)
-=\operatorname{Tr}\!\left[
+=\mathrm{Tr}\!\left[
 (M_{s|x}\otimes I_6)
 \bigl(\mathcal I^{(K)}_{t_K|y_K}\circ\cdots\circ
 \mathcal I^{(1)}_{t_1|y_1}\bigr)

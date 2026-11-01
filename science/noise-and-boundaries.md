@@ -134,7 +134,7 @@ which is false. The input sequence in this example is correlated, so that inequa
 The [general evidence theorem](general-evidence-budget.md) instead charges
 
 $$
-\operatorname{TC}(Y_1,\ldots,Y_K)=(K-1)\ln2.
+\mathrm{TC}(Y_1,\ldots,Y_K)=(K-1)\ln2.
 $$
 
 Each marginal can have the same nonzero KL evidence rate, because later inputs select a basis already used to create the record. Later Bobs do not receive fresh entanglement conditioned on their input: their incoming postmeasurement state is already correlated with that input.

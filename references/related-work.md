@@ -55,7 +55,7 @@ This is the direct source of the attaining mechanism. Eqs. (9)–(10) give the t
 Keeping Alice at the source's strategy I gives the one-sided protocol used here. Its PR specialization has $\gamma=1/2$, $\beta=0$ and
 
 $$
-q_{i+1}=\frac{q_i(1-p_i)}2,\qquad S_i-2=2q_ip_i.
+q_{i+1}=\frac{q_i(1-p_i)}{2},\qquad S_i-2=2q_ip_i.
 $$
 
 The allocation $p_i=(2^{K-i+1}-1)^{-1}$ is the source's Eq. (18) at $\mu=2$ and attains the exact common gap $2/(2^K-1)$. The source's larger sufficient lower bound on $\mu$ ensures sharing on both wings; it is unnecessary in this one-sided specialization. More general choices of $p_i$ attain the entire nonnegative region proved here.

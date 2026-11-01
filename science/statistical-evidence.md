@@ -19,7 +19,7 @@ be the unconditional marginal behavior: all other Bob settings and outcomes are 
 
 $$
 p_i(x,y,a,b)=\mu_X(x)\mu_i(y)P_i(a,b\mid x,y),
-\qquad \mu_i(0)=\mu_i(1)=\tfrac12.
+\qquad \mu_i(0)=\mu_i(1)=\tfrac{1}{2}.
 $$
 
 The local set $\mathcal L$ consists of behaviors
@@ -41,7 +41,7 @@ D\!\left(P_i(\cdot,\cdot\mid x,y)
 \tag{1}
 $$
 
-Thus $\nu_i=\inf_{Q\in\mathcal L}D(p_i\|q_i)$, with $q_i=\mu_X\mu_iQ$. The conventions are $0\ln(0/q)=0$ and $p\ln(p/0)=+\infty$ for $p>0$.
+Thus $\nu_i=\inf_{Q\in\mathcal L}D(p_i\|q_i)$, with $q_i=\mu_X\mu_iQ$. The conventions are $0\ln(0/q)=0$ and $p\ln(p/0)=+\infty$ for $p\gt 0$.
 
 The use of KL divergence to quantify Bell-test evidence follows van Dam, Gill and Grünwald, [*The Statistical Strength of Nonlocality Proofs*](https://doi.org/10.1109/TIT.2005.851738) (`vanDamGillGrunwald2005`). Equation (1) fixes the actual input distribution. It does not optimize the Alice input distribution separately for different links. Operational distinctions between definitions of statistical strength are discussed by Gallego and Aolita, [PRA 95, 032118](https://doi.org/10.1103/PhysRevA.95.032118) (`GallegoAolita2017`).
 
@@ -63,13 +63,13 @@ $$
 \tag{2}
 $$
 
-where $0<\alpha_i<1-\beta_i<1$. The type-I requirement can be stronger, for example validity against local devices with memory; requiring validity against all iid local alternatives already suffices for the lower bound.
+where $0\lt \alpha_i\lt 1-\beta_i\lt 1$. The type-I requirement can be stronger, for example validity against local devices with memory; requiring validity against all iid local alternatives already suffices for the lower bound.
 
 Define
 
 $$
 d(s\|t)=s\ln\frac{s}{t}+(1-s)\ln\frac{1-s}{1-t},
-\qquad c_i=d(1-\beta_i\|\alpha_i)>0.
+\qquad c_i=d(1-\beta_i\|\alpha_i)\gt 0.
 $$
 
 **Lemma 1.** Every test satisfying (2) obeys
@@ -88,7 +88,7 @@ nD(p_i\|q_i)
 \ge d(1-\beta_i\|\alpha_i).
 $$
 
-The last inequality follows because $s\ge1-\beta_i>\alpha_i\ge t$: in this region binary relative entropy increases with $s$ and decreases with $t$. Taking the infimum over $Q$ proves (3). No asymptotic approximation is used. □
+The last inequality follows because $s\ge1-\beta_i\gt \alpha_i\ge t$: in this region binary relative entropy increases with $s$ and decreases with $t$. Taking the infimum over $Q$ proves (3). No asymptotic approximation is used. □
 
 If the true source rows are correlated, the equality $D(p_i^{\otimes n}\|q_i^{\otimes n})=nD(p_i\|q_i)$ is unavailable. A separate analysis of conditional row laws is then needed; a one-row value $\nu_i$ does not by itself supply (3).
 
@@ -96,7 +96,7 @@ If the true source rows are correlated, the equality $D(p_i^{\otimes n}\|q_i^{\o
 
 Let $S_i$ be the largest of the eight signed CHSH orientations of $P_i$, and set $\delta_i=S_i-2$. The complete two-input, two-output local characterization is used here: a valid nonsignalling behavior is local exactly when all its CHSH inequalities hold. This is the content of Fine's theorem; see [PRL 48, 291](https://doi.org/10.1103/PhysRevLett.48.291) (`Fine1982`).
 
-**Lemma 2.** If $S_i>2$, then
+**Lemma 2.** If $S_i\gt 2$, then
 
 $$
 \boxed{\nu_i\le\ln(1+\delta_i/2).}
@@ -105,7 +105,7 @@ $$
 
 If $S_i\le2$, then $\nu_i=0$.
 
-**Proof.** Write $P=P_i$, $S=S_i$, and let $U(a,b\mid x,y)=1/4$. For $S>2$, set
+**Proof.** Write $P=P_i$, $S=S_i$, and let $U(a,b\mid x,y)=1/4$. For $S\gt 2$, set
 
 $$
 t=\frac{2}{S},\qquad Q=tP+(1-t)U.
@@ -113,7 +113,7 @@ $$
 
 This is a valid nonsignalling behavior. Each CHSH expression is linear in the correlators and vanishes on $U$, so every orientation of $Q$ is at most $tS=2$. The eight orientations include their negatives. Fine's theorem therefore implies $Q\in\mathcal L$.
 
-For every outcome and input with $P>0$, $Q\ge tP$, hence $\ln(P/Q)\le-\ln t$. Averaging with the actual setting distribution gives $D(p\|q)\le-\ln t$, proving (4). □
+For every outcome and input with $P\gt 0$, $Q\ge tP$, hence $\ln(P/Q)\le-\ln t$. Averaging with the actual setting distribution gives $D(p\|q)\le-\ln t$, proving (4). □
 
 This is an upper bound on the full-table distance to the local set, not a lower bound obtained from the CHSH score. The direction is essential for a necessary sample-size result. A small violation of one chosen Bell inequality need not give an upper KL bound in larger scenarios. The argument works here because all nontrivial local facets are CHSH facets.
 
@@ -128,7 +128,7 @@ $$
 \tag{5}
 $$
 
-Tests satisfying (2) have $\nu_i>0$ by Lemma 1. Each marginal is consequently nonlocal, so $\delta_i>0$, and Lemma 2 can be rearranged to give
+Tests satisfying (2) have $\nu_i\gt 0$ by Lemma 1. Each marginal is consequently nonlocal, so $\delta_i\gt 0$, and Lemma 2 can be rearranged to give
 
 $$
 \delta_i\ge2(e^{\nu_i}-1).
@@ -165,7 +165,7 @@ n\ge
 \tag{8}
 $$
 
-The ceiling of the right-hand side is understood for integer $n$. At fixed nontrivial error probabilities this is $\Omega(2^K)$. For fixed $0<\beta<1$ and $\alpha\to0$,
+The ceiling of the right-hand side is understood for integer $n$. At fixed nontrivial error probabilities this is $\Omega(2^K)$. For fixed $0\lt \beta\lt 1$ and $\alpha\to0$,
 
 $$
 d(1-\beta\|\alpha)

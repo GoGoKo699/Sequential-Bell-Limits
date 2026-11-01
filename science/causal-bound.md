@@ -6,9 +6,9 @@ The joint causal conditions in the [model](model.md) force a weighted restrictio
 
 For a Bob history $h$, let $m_x(h)=\mathbb E[A\mid X=x,H=h]$ and define
 ```math
-u(h)=\frac{m_0(h)+m_1(h)}2,
+u(h)=\frac{m_0(h)+m_1(h)}{2},
 \qquad
-v(h)=\frac{m_0(h)-m_1(h)}2.
+v(h)=\frac{m_0(h)-m_1(h)}{2}.
 ```
 The elementary identity
 ```math
@@ -182,7 +182,7 @@ The weights count the position within the selected collection, not the original 
 
 ### Corollary 2: an ordered subsequence
 
-Let $1\le i_1<\cdots<i_r\le K$. For independently chosen CHSH orientations at those stages,
+Let $1\le i_1\lt \cdots\lt i_r\le K$. For independently chosen CHSH orientations at those stages,
 ```math
 \boxed{
 \sum_{j=1}^r2^{j-1}\bigl(C_{i_j}(c_j)-2\bigr)
@@ -206,7 +206,7 @@ Weighting by $2^{j-1}$ and summing proves the claim. $\square$
 
 Equivalently, one may average the omitted settings and sum the omitted outcomes to obtain a shorter time-ordered behavior. Its ordinary marginals are exactly the selected $P_{i_j}$. Omitted physical operations are retained in the experiment; they are simply part of the causal process between the selected observers.
 
-In particular, if a longer chain contains $r$ observers each with gap at least $\delta>0$, then
+In particular, if a longer chain contains $r$ observers each with gap at least $\delta\gt 0$, then
 ```math
 \delta\le\frac{2}{2^r-1}.
 ```

@@ -241,7 +241,7 @@ $$
 \tag{Q20}
 $$
 
-Equivalently, $-\log_2\delta_K^{\mathrm Q}=K+O(\log K)$. The exact quantum margin can still differ from the no-signalling value by a polynomial factor; (Q20) does not determine that factor.
+The same bounds also give $-\log_2\delta_K^{\mathrm Q}=K+O(\log K)$. The exact quantum margin can still differ from the no-signalling value by a polynomial factor; (Q20) does not determine that factor.
 
 This is a family of finite-depth experiments. Specifically, $\cot^2\theta_K=8/K$, and the state approaches a product state as $K$ grows. Alice's projectors change with that state. For a fixed $a>0$ independent of $K$, (Q14) instead has exponential base $2+a$. The calculation does not establish the optimum with any prescribed fixed initial state.
 
